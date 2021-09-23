@@ -12,6 +12,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       alias: {
         '@components': path.resolve(__dirname, 'src/components'),
+        '@config': path.resolve(__dirname, 'src/config'),
         '@containers': path.resolve(__dirname, 'src/containers'),
         '@hooks': path.resolve(__dirname, 'src/hooks'),
         '@pages': path.resolve(__dirname, 'src/pages'),
