@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 // Layout components are special, they refer to the viewport and even the metatags are related to it.
 // Every page will be wrapped by a Layout component.
 import SiteMetadata from './SiteMetadata'
+import Navigation from './Navigation'
 
 const styles = {
   color: '#232129',
@@ -18,12 +19,7 @@ const PageLayout = ({ pageTitle, children }) => {
       <SiteMetadata title={pageTitle} />
       {children}
       <hr />
-      <nav>
-        <ul>
-          <li><Link to="/">Index Page</Link></li>
-          <li><Link to="/404">Not Found Page</Link></li>
-        </ul>
-      </nav>
+      <Navigation />
     </main>
   )
 }

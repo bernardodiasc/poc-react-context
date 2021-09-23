@@ -24,7 +24,7 @@ const useAppContext = () => {
 }
 
 // provider are used only once to avoid duplication of data
-const AppProvider = ({ element }) => {
+const AppProvider = ({ children }) => {
   const { isAppMounted } = useIsAppMounted()
 
   // Any async data fetching goes here
@@ -37,7 +37,7 @@ const AppProvider = ({ element }) => {
         isAppLoading: isSSR || !isAppMounted
       }}
     >
-      {element}
+      {children}
     </AppContext.Provider>
   )
 }
@@ -54,7 +54,7 @@ const AppProvider = ({ element }) => {
 
 
 //
-const AppContainer = ({ element, props }) => {
+const AppContainer = ({ children, ...props }) => {
   const { isAppMounted, isAppLoading } = useAppContext()
 
   // Redirect rules happens here during App Loading stage.
@@ -73,7 +73,7 @@ const AppContainer = ({ element, props }) => {
   // key={isAppMounted} is required here to prevent hydration issues
   return (
     <Fragment key={isAppMounted}>
-      {isAppLoading || isAppStillLoading ? <LoadingLayout pageTitle="Loading App..." /> : element}
+      {isAppLoading || isAppStillLoading ? <LoadingLayout pageTitle="Loading App..." /> : children}
     </Fragment>
   )
 }
