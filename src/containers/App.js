@@ -1,8 +1,10 @@
 import React, { Fragment, createContext, useContext, useState, useEffect } from 'react'
 
-import LoadingLayout from '@components/LoadingLayout'
+import Navigation from '@components/Navigation'
 
 import useIsAppMounted from '@hooks/useIsAppMounted'
+import useIsAppStillLoading from '@hooks/useIsAppStillLoading'
+
 import { isSSR } from '@utils/helpers'
 
 const initialAppState = {
@@ -12,7 +14,7 @@ const initialAppState = {
 }
 const AppContext = createContext(initialAppState)
 
-// safely guarded useAppContext hook
+// Safely guarded useAppContext hook
 const useAppContext = () => {
   const context = useContext(AppContext)
 
@@ -23,18 +25,20 @@ const useAppContext = () => {
   return context
 }
 
-// provider are used only once to avoid duplication of data
+// The provider are used only once at wrapRootElement to avoid duplication of data
 const AppProvider = ({ children }) => {
   const { isAppMounted } = useIsAppMounted()
 
-  // Any async data fetching goes here
+  // Any async data fetching goes here, example:
+  const { isAppStillLoading } = useIsAppStillLoading()
 
   return (
     <AppContext.Provider
       value={{
         isAppMounted,
         isSSR,
-        isAppLoading: isSSR || !isAppMounted
+        isAppLoading: isSSR || !isAppMounted,
+        isAppStillLoading
       }}
     >
       {children}
@@ -45,37 +49,25 @@ const AppProvider = ({ children }) => {
 /**
  * AppContainer
  *
- * This container is declared on top of Gatsby pages therefore it has only one declared in the render tree.
+ * This container is added to wrapPageElement.
+ * It renders on top of all Gatsby's pages.
+ * It has only one declared in the render tree during user session.
  */
-// AppContainer have render requirements and is on top of pages,
-// therefore it has only one in the render tree.
-// Third party thats applied globally are added here.
-// App behaviours such as idle screen also goes here.
-
-
-//
 const AppContainer = ({ children, ...props }) => {
-  const { isAppMounted, isAppLoading } = useAppContext()
+  // UTILITIES
+  // - Redirect rules happens here during App Loading stage.
+  // - Third party that applies globally are added here.
+  // - App behaviours such as idle screen also goes here.
 
-  // Redirect rules happens here during App Loading stage.
-  // It can be used raw javascript to handle location.pathname.
+  const { isAppMounted } = useAppContext()
 
-  // Example of a sync event that blocks the screen.
-  const [isAppStillLoading, setIsAppStillLoading] = useState(isAppLoading)
-  // console.log({isAppMounted, isAppStillLoading, isAppLoading})
-  useEffect(() => {
-    const loader = setTimeout(() => {
-      setIsAppStillLoading(false)
-    }, 3000)
-    return () => clearTimeout(loader)
-  }, [])
-
-  // key={isAppMounted} is required here to prevent hydration issues
   return (
     <Fragment key={isAppMounted}>
-      {isAppLoading || isAppStillLoading ? <LoadingLayout pageTitle="Loading App..." /> : children}
+      <Navigation />
+      {children}
     </Fragment>
   )
+  // key={isAppMounted} is required here to prevent hydration issues
 }
 
 export { AppContainer, AppProvider, AppContext, useAppContext }

@@ -1,31 +1,52 @@
 import * as React from 'react'
-import { Link } from  'gatsby'
+
+import NavigationLink from '@components/NavigationLink'
+
+const styles = {
+  nav: {
+    position: 'absolute',
+    bottom: '30px',
+    left: '30px',
+    background: 'white',
+    padding: '2em',
+    border: '1px dashed',
+    width: '250px',
+    height: '300px',
+    overflow: 'auto',
+  },
+  ul: {
+    margin: '0',
+    padding: '0 0 0 1em',
+  },
+}
 
 const Navigation = () => (
-  <nav>
-    <ul>
-      <li><Link to="/">/</Link></li>
-      <li><Link to="/404">/404</Link></li>
-      <li><Link to="/signup">/signup</Link></li>
-      <li><Link to="/signup/experience">/signup/experience</Link></li>
-      <li><Link to="/signup/about">/signup/about</Link></li>
-      <li><Link to="/signup/404">/signup/404</Link></li>
-      <li><Link to="/jobs">/jobs</Link></li>
-      <li><Link to="/jobs/my-applications">/jobs/my-applications</Link></li>
-      <li><Link to="/jobs/:job-name">/jobs/:job-name</Link></li>
-      <li><Link to="/jobs/404">/jobs/404</Link></li>
-      <li><Link to="/activate">/activate</Link></li>
-      <li><Link to="/applicant">/applicant</Link></li>
-      <li><Link to="/forgot-password">/forgot-password</Link></li>
-      <li><Link to="/forgot-secret">/forgot-secret</Link></li>
-      <li><Link to="/reset-password">/reset-password</Link></li>
-      <li><Link to="/settings">/settings</Link></li>
-      <li><Link to="/whitelabel">/whitelabel</Link></li>
-      <li><Link to="/unsubscribe">/unsubscribe</Link></li>
-      <li><Link to="/unsubscribe/job-alerts">/unsubscribe/job-alerts</Link></li>
-      <li><Link to="/feedback">/feedback</Link></li>
-      <li><Link to="/feedback/already-received">/feedback/already-received</Link></li>
-      <li><Link to="/feedback/error">/feedback/error</Link></li>
+  <nav style={styles.nav}>
+    List of all routes in use in the current version on jobs site:
+    <br /><br />
+    <ul style={styles.ul}>
+      <li><NavigationLink to="/">/</NavigationLink></li>
+      <li><NavigationLink to="/404">/404</NavigationLink></li>
+      <li><NavigationLink to="/signup">/signup</NavigationLink></li>
+      <li><NavigationLink to="/signup/experience">/signup/experience</NavigationLink></li>
+      <li><NavigationLink to="/signup/about">/signup/about</NavigationLink></li>
+      <li><NavigationLink to="/signup/404">/signup/404</NavigationLink></li>
+      <li><NavigationLink to="/jobs">/jobs</NavigationLink></li>
+      <li><NavigationLink to="/jobs/my-applications">/jobs/my-applications</NavigationLink></li>
+      <li><NavigationLink to="/jobs/:job-name">/jobs/:job-name</NavigationLink></li>
+      <li><NavigationLink to="/jobs/404">/jobs/404</NavigationLink></li>
+      <li><NavigationLink to="/activate">/activate</NavigationLink></li>
+      <li><NavigationLink to="/applicant">/applicant</NavigationLink></li>
+      <li><NavigationLink to="/forgot-password">/forgot-password</NavigationLink></li>
+      <li><NavigationLink to="/forgot-secret">/forgot-secret</NavigationLink></li>
+      <li><NavigationLink to="/reset-password">/reset-password</NavigationLink></li>
+      <li><NavigationLink to="/settings">/settings</NavigationLink></li>
+      <li><NavigationLink to="/whitelabel">/whitelabel</NavigationLink></li>
+      <li><NavigationLink to="/unsubscribe">/unsubscribe</NavigationLink></li>
+      <li><NavigationLink to="/unsubscribe/job-alerts">/unsubscribe/job-alerts</NavigationLink></li>
+      <li><NavigationLink to="/feedback">/feedback</NavigationLink></li>
+      <li><NavigationLink to="/feedback/already-received">/feedback/already-received</NavigationLink></li>
+      <li><NavigationLink to="/feedback/error">/feedback/error</NavigationLink></li>
     </ul>
   </nav>
 )

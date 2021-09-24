@@ -1,3 +1,9 @@
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
+
 const path = require('path')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -12,4 +18,13 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       }
     }
   })
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+  // To support dynamic Job pages
+  if (page.path.match(/^\/jobs(?!\/my-applications)/)) {
+    page.matchPath = '/jobs/*'
+    createPage(page)
+  }
 }

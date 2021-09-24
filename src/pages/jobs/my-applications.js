@@ -3,13 +3,13 @@ import React from 'react'
 import SiteMetadata from '@components/SiteMetadata'
 import PageLayout from '@components/PageLayout'
 
-const IndexPage = () => {
+const MyApplicationsPage = () => {
   return (
     <PageLayout>
-      <SiteMetadata title="Index page" />
-      Index Page
+      <SiteMetadata title="My Applications page" />
+      My Applications Page
     </PageLayout>
   )
 }
 
-export default IndexPage
+export default MyApplicationsPage
