@@ -1,6 +1,6 @@
 import React, { Fragment, createContext, useContext, useState, useEffect } from 'react'
 
-import Navigation from '@components/Navigation'
+import AppLayout from '@components/AppLayout'
 
 import useIsAppMounted from '@hooks/useIsAppMounted'
 import useIsAppStillLoading from '@hooks/useIsAppStillLoading'
@@ -54,20 +54,19 @@ const AppProvider = ({ children }) => {
  * It has only one declared in the render tree during user session.
  */
 const AppContainer = ({ children, ...props }) => {
-  // UTILITIES
+  // EFFECTS
   // - Redirect rules happens here during App Loading stage.
   // - Third party that applies globally are added here.
   // - App behaviours such as idle screen also goes here.
 
   const { isAppMounted } = useAppContext()
 
-  return (
-    <Fragment key={isAppMounted}>
-      <Navigation />
-      {children}
-    </Fragment>
-  )
   // key={isAppMounted} is required here to prevent hydration issues
+  return (
+    <AppLayout key={isAppMounted}>
+      {children}
+    </AppLayout>
+  )
 }
 
 export { AppContainer, AppProvider, AppContext, useAppContext }

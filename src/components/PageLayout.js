@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import LoadingLayout from '@components/LoadingLayout'
 
-import { useAppContext } from '@containers/App'
+import { useAppContext } from '@containers/AppContainer'
 
 // Layout components are a kind of components,
 // their CSS styles refers to the browser's viewport.
@@ -13,21 +13,15 @@ const styles = {
   color: '#232129',
   padding: 96,
   fontFamily: '-apple-system, Roboto, sans-serif, serif',
-  heigh: '100vh',
+  height: '100vh',
 }
 
 const PageLayout = ({ pageTitle, children }) => {
-  const { isAppMounted, isAppLoading, isAppStillLoading } = useAppContext()
-
-  const isAppReady = !isAppLoading && !isAppStillLoading
-
-  return isAppReady ? (
-    <main style={styles}>
+  return (
+    <article style={styles}>
       {children}
       <hr />
-    </main>
-  ) : (
-    <LoadingLayout pageTitle="Loading App..." />
+    </article>
   )
 }
 

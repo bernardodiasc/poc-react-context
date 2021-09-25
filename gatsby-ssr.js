@@ -6,7 +6,7 @@
 
 import * as React from 'react'
 
-import { AppProvider, AppContainer } from '@containers/App'
+import { AppProvider, AppContainer } from '@containers/AppContainer'
 
-export const wrapRootElement = ({ element }) => <AppProvider element={element} />
-export const wrapPageElement = ({ element, props }) => <AppContainer element={element} {...props} />
+export const wrapRootElement = ({ element }) => <AppProvider>{element}</AppProvider>
+export const wrapPageElement = ({ element, props }) => <AppContainer {...props}>{element}</AppContainer>
