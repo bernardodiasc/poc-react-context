@@ -4,16 +4,30 @@ import { useState, useEffect } from 'react'
 // The hook itself is not responsible to update the render, what it does
 // is responde with it's state once it gets updated.
 
-function useIsAppStillLoading () {
+function useIsAppStillLoading (ms) {
   const [isAppStillLoading, setIsAppStillLoading] = useState(true)
   useEffect(() => {
-    console.log(isAppStillLoading)
-    if (isAppStillLoading) {
-      const loader = setTimeout(() => {
-        setIsAppStillLoading(false)
-      }, 3000)
-      return () => clearTimeout(loader)
+    const delay = () => {
+      let id
+      const promise = new Promise(resolve => {
+        id = setTimeout(resolve, ms)
+      })
+      return { id, promise }
     }
+
+    async function simulateDataFetching() {
+      if (isAppStillLoading) {
+        const { id, promise } = delay(ms)
+        try {
+          await promise
+          setIsAppStillLoading(false)
+        } catch (error) {
+          clearTimeout(id)
+        }
+        return () => clearTimeout(id)
+      }
+    }
+    simulateDataFetching()
   }, [isAppStillLoading, setIsAppStillLoading])
 
   return { isAppStillLoading, setIsAppStillLoading }

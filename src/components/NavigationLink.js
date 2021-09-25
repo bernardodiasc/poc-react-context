@@ -2,16 +2,20 @@ import * as React from 'react'
 import { Link } from  'gatsby'
 
 const styles = {
-  fontSize: '1.1rem',
-  lineHeight: '1.5',
+  active: {
+    fontWeight: 'bold',
+  }
 }
 
-const NavigationLink = ({ children, to }) => (
-  <span style={styles}>
-    <Link to={to}>
-      {children}
-    </Link>
-  </span>
+const NavigationLink = ({ children, to, state }) => (
+  <Link
+    to={to}
+    activeStyle={styles.active}
+    // partiallyActive={true}
+    state={state}
+  >
+    {children}
+  </Link>
 )
 
 export default NavigationLink

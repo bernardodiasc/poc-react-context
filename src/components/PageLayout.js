@@ -9,18 +9,23 @@ import { useAppContext } from '@containers/AppContainer'
 // their CSS styles refers to the browser's viewport.
 // Every page should be wrapped by a Layout component.
 
-const styles = {
-  color: '#232129',
-  padding: 96,
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-  height: '100vh',
-}
+const PageLayout = ({ children, background }) => {
+  const styles = {
+    color: '#232129',
+    fontFamily: '-apple-system, Roboto, sans-serif, serif',
+    height: '100vh',
+  }
 
-const PageLayout = ({ pageTitle, children }) => {
   return (
     <article style={styles}>
-      {children}
-      <hr />
+      {background ? (
+        <img src={`/screenshots/desktop/${background}`} />
+      ) : (
+        <>
+          {children}
+          <hr />
+        </>
+      )}
     </article>
   )
 }

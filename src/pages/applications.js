@@ -3,11 +3,11 @@ import React from 'react'
 import SiteMetadata from '@components/SiteMetadata'
 import PageLayout from '@components/PageLayout'
 
-const JobsPage = ({ location: { state: { screenshot } } }) => (
+const ApplicationsPage = ({ location: { state: { screenshot } } }) => (
   <>
-    <SiteMetadata title="Jobs Dashboard page" />
+    <SiteMetadata title="Applications page" />
     <PageLayout background={screenshot} />
   </>
 )
 
-export default JobsPage
+export default ApplicationsPage

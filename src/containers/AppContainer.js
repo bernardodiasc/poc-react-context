@@ -1,4 +1,4 @@
-import React, { Fragment, createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState, useEffect } from 'react'
 
 import AppLayout from '@components/AppLayout'
 
@@ -30,7 +30,7 @@ const AppProvider = ({ children }) => {
   const { isAppMounted } = useIsAppMounted()
 
   // Any async data fetching goes here, example:
-  const { isAppStillLoading } = useIsAppStillLoading()
+  const { isAppStillLoading } = useIsAppStillLoading(3000)
 
   return (
     <AppContext.Provider
@@ -52,6 +52,8 @@ const AppProvider = ({ children }) => {
  * This container is added to wrapPageElement.
  * It renders on top of all Gatsby's pages.
  * It has only one declared in the render tree during user session.
+ *
+ * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
 const AppContainer = ({ children, ...props }) => {
   // EFFECTS
@@ -62,6 +64,7 @@ const AppContainer = ({ children, ...props }) => {
   const { isAppMounted } = useAppContext()
 
   // key={isAppMounted} is required here to prevent hydration issues
+  // https://www.gatsbyjs.com/docs/conceptual/react-hydration/
   return (
     <AppLayout key={isAppMounted}>
       {children}

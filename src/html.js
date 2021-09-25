@@ -19,7 +19,7 @@ export default function HTML (props) {
         <title>X-Team</title>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body {...props.bodyAttributes} style={{ margin: '0' }}>
         {props.preBodyComponents}
         <div
           key={`body`}
