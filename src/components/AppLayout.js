@@ -6,7 +6,7 @@ import Navigation from '@components/Navigation'
 
 import { useAppContext } from '@containers/AppContainer'
 
-const PageLayout = ({ children }) => {
+const AppLayout = ({ children }) => {
   const { isAppMounted, isAppLoading, isAppStillLoading } = useAppContext()
 
   const isAppReady = !isAppLoading && !isAppStillLoading
@@ -24,4 +24,4 @@ const PageLayout = ({ children }) => {
   )
 }
 
-export default PageLayout
+export default AppLayout
