@@ -38,7 +38,7 @@ const Navigation = () => {
   const toggleNav = () => setIsExpanded(!isExpanded)
   return isExpanded ? (
     <nav style={styles.nav}>
-      <button style={styles.close} onClick={toggleNav}>Close navigation</button>
+      <button style={styles.close} onClick={toggleNav}>Close debug panel</button>
       <details open>
         <summary>List of all routes in use in the <b>new</b> version on jobs site:</summary>
         <ul style={styles.ul}>
@@ -67,7 +67,7 @@ const Navigation = () => {
           <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 5.png' }}>/settings</NavigationLink> (rate)</li>
           <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 6.png' }}>/settings</NavigationLink> (roles)</li>
 
-          <li><NavigationLink to="/exclusives">/exclusives</NavigationLink></li>
+          <li><NavigationLink to="/exclusives" state={{ screenshot: 'Exclusives - 23.png' }}>/exclusives</NavigationLink></li>
 
           <li><NavigationLink to="/applications" state={{ screenshot: 'Applications - In Review.png' }}>/applications</NavigationLink></li>
         </ul>
@@ -100,7 +100,7 @@ const Navigation = () => {
         </ul>
       </details>
     </nav>
-  ) : <button style={styles.open} onClick={toggleNav}>Open navigation</button>
+  ) : <button style={styles.open} onClick={toggleNav}>Open debug panel</button>
 }
 
 export default Navigation

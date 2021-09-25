@@ -13,6 +13,7 @@ const PageLayout = ({ children, background }) => (
       <>
         {children}
         <hr />
+        Try clicking on a route in the debug navigation.
       </>
     )}
   </article>
