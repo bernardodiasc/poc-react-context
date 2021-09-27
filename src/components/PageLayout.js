@@ -5,6 +5,7 @@ import LoadingLayout from '@components/LoadingLayout'
 
 import { useAppContext } from '@containers/AppContainer'
 
+console.log('process.env.GATSBY_DOMAIN_URL:', process.env.GATSBY_DOMAIN_URL)
 const PageLayout = ({ children, background }) => (
   <article>
     {background ? (
