@@ -8,7 +8,7 @@ import { useAppContext } from '@containers/AppContainer'
 const PageLayout = ({ children, background }) => (
   <article>
     {background ? (
-      <img src={`/screenshots/desktop/${background}`} />
+      <img src={`${process.env.GATSBY_DOMAIN_URL}screenshots/desktop/${background}`} />
     ) : (
       <>
         {children}
