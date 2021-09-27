@@ -42,34 +42,34 @@ const Navigation = () => {
       <details open>
         <summary>List of all routes in use in the <b>new</b> version on jobs site:</summary>
         <ul style={styles.ul}>
-          <li><NavigationLink to="/" state={{ screenshot: 'Login - 1.png' }}>/</NavigationLink> (guest)</li>
-          <li><NavigationLink to="/" state={{ screenshot: 'HomePage - Pre-Exclusives Launch.png' }}>/</NavigationLink> (authenticated)</li>
-          <li><NavigationLink to="/" state={{ screenshot: 'HomePage - Pre-Exclusives Launch (1).png' }}>/</NavigationLink> (applied for a job)</li>
+          <li><NavigationLink to="/" state={{ screenshot: 'Login-1.png' }}>/</NavigationLink> (guest)</li>
+          <li><NavigationLink to="/" state={{ screenshot: 'HomePage-Pre-Exclusives Launch.png' }}>/</NavigationLink> (authenticated)</li>
+          <li><NavigationLink to="/" state={{ screenshot: 'HomePage-Pre-Exclusives Launch(1).png' }}>/</NavigationLink> (applied for a job)</li>
 
           <li><NavigationLink to="/404">/404</NavigationLink></li>
-          <li><NavigationLink to="/signup" state={{ screenshot: 'Signup - 1.png' }}>/signup</NavigationLink></li>
+          <li><NavigationLink to="/signup" state={{ screenshot: 'Signup-1.png' }}>/signup</NavigationLink></li>
 
-          <li><NavigationLink to="/profile" state={{ screenshot: 'Profile - 3.png' }}>/profile</NavigationLink> (my profile)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 2.png' }}>/profile</NavigationLink> (overview)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 3.png' }}>/profile</NavigationLink> (header)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 4.png' }}>/profile</NavigationLink> (top skills)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 5.png' }}>/profile</NavigationLink> (introduction)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 6.png' }}>/profile</NavigationLink> (experiences)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 7.png' }}>/profile</NavigationLink> (xp title)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 8.png' }}>/profile</NavigationLink> (xp date)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 9.png' }}>/profile</NavigationLink> (xp skills)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor - 10.png' }}>/profile</NavigationLink> (xp highlights)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'Profile-3.png' }}>/profile</NavigationLink> (my profile)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-2.png' }}>/profile</NavigationLink> (overview)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-3.png' }}>/profile</NavigationLink> (header)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-4.png' }}>/profile</NavigationLink> (top skills)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-5.png' }}>/profile</NavigationLink> (introduction)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-6.png' }}>/profile</NavigationLink> (experiences)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-7.png' }}>/profile</NavigationLink> (xp title)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-8.png' }}>/profile</NavigationLink> (xp date)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-9.png' }}>/profile</NavigationLink> (xp skills)</li>
+          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-10.png' }}>/profile</NavigationLink> (xp highlights)</li>
 
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 1.png' }}>/settings</NavigationLink> (saved)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 2.png' }}>/settings</NavigationLink> (email)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 3.png' }}>/settings</NavigationLink> (password)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 4.png' }}>/settings</NavigationLink> (notifications)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 5.png' }}>/settings</NavigationLink> (rate)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings - 6.png' }}>/settings</NavigationLink> (roles)</li>
+          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-1.png' }}>/settings</NavigationLink> (saved)</li>
+          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-2.png' }}>/settings</NavigationLink> (email)</li>
+          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-3.png' }}>/settings</NavigationLink> (password)</li>
+          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-4.png' }}>/settings</NavigationLink> (notifications)</li>
+          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-5.png' }}>/settings</NavigationLink> (rate)</li>
+          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-6.png' }}>/settings</NavigationLink> (roles)</li>
 
-          <li><NavigationLink to="/exclusives" state={{ screenshot: 'Exclusives - 23.png' }}>/exclusives</NavigationLink></li>
+          <li><NavigationLink to="/exclusives" state={{ screenshot: 'Exclusives-23.png' }}>/exclusives</NavigationLink></li>
 
-          <li><NavigationLink to="/applications" state={{ screenshot: 'Applications - In Review.png' }}>/applications</NavigationLink></li>
+          <li><NavigationLink to="/applications" state={{ screenshot: 'Applications-InReview.png' }}>/applications</NavigationLink></li>
         </ul>
       </details>
       <details>
