@@ -9,4 +9,5 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap"
   ],
+  pathPrefix: "/poc-react-context",
 };
