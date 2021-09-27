@@ -33,6 +33,146 @@ const styles = {
   },
 }
 
+const newRoutesAndScreens = [
+  {
+    to: "/",
+    screenshot: 'Login-1.png',
+    title: "/",
+    label: "(guest)",
+  },
+  {
+    to: "/",
+    screenshot: 'HomePage-Pre-ExclusivesLaunch.png',
+    title: "/",
+    label: "(authenticated)",
+  },
+  {
+    to: "/",
+    screenshot: 'HomePage-Pre-ExclusivesLaunch(1).png',
+    title: "/",
+    label: "(applied for a job)",
+  },
+  {
+    to: "/404",
+    title: "/404",
+    label: "",
+  },
+  {
+    to: "/signup",
+    screenshot: 'Signup-1.png',
+    title: "/signup",
+    label: "",
+  },
+  {
+    to: "/profile",
+    screenshot: 'Profile-3.png',
+    title: "/profile",
+    label: "(my profile)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-2.png',
+    title: "/profile",
+    label: "(overview)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-3.png',
+    title: "/profile",
+    label: "(header)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-4.png',
+    title: "/profile",
+    label: "(top skills)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-5.png',
+    title: "/profile",
+    label: "(introduction)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-6.png',
+    title: "/profile",
+    label: "(experiences)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-7.png',
+    title: "/profile",
+    label: "(xp title)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-8.png',
+    title: "/profile",
+    label: "(xp date)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-9.png',
+    title: "/profile",
+    label: "(xp skills)",
+  },
+  {
+    to: "/profile",
+    screenshot: 'ProfileEditor-10.png',
+    title: "/profile",
+    label: "(xp highlights)",
+  },
+  {
+    to: "/settings",
+    screenshot: 'Settings-1.png',
+    title: "/settings",
+    label: "(saved)",
+  },
+  {
+    to: "/settings",
+    screenshot: 'Settings-2.png',
+    title: "/settings",
+    label: "(email)",
+  },
+  {
+    to: "/settings",
+    screenshot: 'Settings-3.png',
+    title: "/settings",
+    label: "(password)",
+  },
+  {
+    to: "/settings",
+    screenshot: 'Settings-4.png',
+    title: "/settings",
+    label: "(notifications)",
+  },
+  {
+    to: "/settings",
+    screenshot: 'Settings-5.png',
+    title: "/settings",
+    label: "(rate)",
+  },
+  {
+    to: "/settings",
+    screenshot: 'Settings-6.png',
+    title: "/settings",
+    label: "(roles)",
+  },
+  {
+    to: "/exclusives",
+    screenshot: 'Exclusives-23.png',
+    title: "/exclusives",
+    label: "",
+  },
+  {
+    to: "/applications",
+    screenshot: 'Applications-InReview.png',
+    title: "/applications",
+    label: "",
+  },
+]
+
 const Navigation = () => {
   const [isExpanded, setIsExpanded] = useState(true)
   const toggleNav = () => setIsExpanded(!isExpanded)
@@ -42,34 +182,8 @@ const Navigation = () => {
       <details open>
         <summary>List of all routes in use in the <b>new</b> version on jobs site:</summary>
         <ul style={styles.ul}>
-          <li><NavigationLink to="/" state={{ screenshot: 'Login-1.png' }}>/</NavigationLink> (guest)</li>
-          <li><NavigationLink to="/" state={{ screenshot: 'HomePage-Pre-Exclusives Launch.png' }}>/</NavigationLink> (authenticated)</li>
-          <li><NavigationLink to="/" state={{ screenshot: 'HomePage-Pre-Exclusives Launch(1).png' }}>/</NavigationLink> (applied for a job)</li>
-
-          <li><NavigationLink to="/404">/404</NavigationLink></li>
-          <li><NavigationLink to="/signup" state={{ screenshot: 'Signup-1.png' }}>/signup</NavigationLink></li>
-
-          <li><NavigationLink to="/profile" state={{ screenshot: 'Profile-3.png' }}>/profile</NavigationLink> (my profile)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-2.png' }}>/profile</NavigationLink> (overview)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-3.png' }}>/profile</NavigationLink> (header)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-4.png' }}>/profile</NavigationLink> (top skills)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-5.png' }}>/profile</NavigationLink> (introduction)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-6.png' }}>/profile</NavigationLink> (experiences)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-7.png' }}>/profile</NavigationLink> (xp title)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-8.png' }}>/profile</NavigationLink> (xp date)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-9.png' }}>/profile</NavigationLink> (xp skills)</li>
-          <li><NavigationLink to="/profile" state={{ screenshot: 'ProfileEditor-10.png' }}>/profile</NavigationLink> (xp highlights)</li>
-
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-1.png' }}>/settings</NavigationLink> (saved)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-2.png' }}>/settings</NavigationLink> (email)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-3.png' }}>/settings</NavigationLink> (password)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-4.png' }}>/settings</NavigationLink> (notifications)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-5.png' }}>/settings</NavigationLink> (rate)</li>
-          <li><NavigationLink to="/settings" state={{ screenshot: 'Settings-6.png' }}>/settings</NavigationLink> (roles)</li>
-
-          <li><NavigationLink to="/exclusives" state={{ screenshot: 'Exclusives-23.png' }}>/exclusives</NavigationLink></li>
-
-          <li><NavigationLink to="/applications" state={{ screenshot: 'Applications-InReview.png' }}>/applications</NavigationLink></li>
+          {newRoutesAndScreens.map(link =>
+            <li><NavigationLink to={link.to} state={{ screenshot: link.screenshot }}>{link.title}</NavigationLink> {link.label}</li>)}
         </ul>
       </details>
       <details>
