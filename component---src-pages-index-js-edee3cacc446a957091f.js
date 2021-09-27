@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpoc_react_context=self.webpackChunkpoc_react_context||[]).push([[678],{7704:function(e,t,n){n.r(t);var c=n(7294),a=n(8500),r=n(792);t.default=function(){return c.createElement(r.Z,null,c.createElement(a.Z,{title:"Index page"}),"Index Page")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-edee3cacc446a957091f.js.map
