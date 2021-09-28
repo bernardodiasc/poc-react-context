@@ -4,6 +4,7 @@ import AppLayout from '@components/AppLayout'
 
 import useIsAppMounted from '@hooks/useIsAppMounted'
 import useIsAppStillLoading from '@hooks/useIsAppStillLoading'
+import useFeatureFlags from '@hooks/useFeatureFlags'
 
 import { isSSR } from '@utils/helpers'
 
@@ -32,13 +33,17 @@ const AppProvider = ({ children }) => {
   // Any async data fetching goes here, example:
   const { isAppStillLoading } = useIsAppStillLoading(3000)
 
+  // Cache "features" at AppContext
+  const { features } = useFeatureFlags()
+
   return (
     <AppContext.Provider
       value={{
         isAppMounted,
         isSSR,
         isAppLoading: isSSR || !isAppMounted,
-        isAppStillLoading
+        isAppStillLoading,
+        features,
       }}
     >
       {children}
