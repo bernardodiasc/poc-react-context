@@ -1,4 +1,4 @@
-import React, { useState, version } from 'react'
+import React, { useState } from 'react'
 import Markdown from 'markdown-to-jsx'
 
 import NavigationLink from '@components/NavigationLink'
@@ -39,13 +39,12 @@ const styles = {
 const Navigation = () => {
   const [isExpanded, setIsExpanded] = useState(true)
   const toggleNav = () => setIsExpanded(!isExpanded)
-
   const renderNavList = (items) => items
     .sort((a, b) => a.to.toLowerCase().localeCompare(b.to.toLowerCase()))
     .map((link, key) => (
       <li key={`item-${key}`}>
         <NavigationLink to={link.to} state={{ screenshot: link.screenshot }}>
-          {link.title}
+          {link.title || link.to}
         </NavigationLink>
         {link.label && (
           <span> {link.label}</span>
