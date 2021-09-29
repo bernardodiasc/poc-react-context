@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { request as api } from '@utils/api-helpers'
 import { useAppContext } from '@containers/AppContainer'
+import { request as api } from '@utils/api-helpers'
 
 export default function useFeatureFlags () {
   const [features, setFeatures] = useState(null)

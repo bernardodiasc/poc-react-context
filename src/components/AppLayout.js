@@ -7,8 +7,8 @@ import Navigation from '@components/Navigation'
 import { useAppContext } from '@containers/AppContainer'
 
 const AppLayout = ({ children }) => {
-  const { isAppLoading, features } = useAppContext()
-  const isAppReady = !isAppLoading && features
+  const { isAppLoading, features, logged } = useAppContext()
+  const isAppReady = !isAppLoading && features && logged
   return isAppReady ? (
     <main>
       <Navigation />

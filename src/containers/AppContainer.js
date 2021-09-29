@@ -3,8 +3,8 @@ import React, { createContext, useContext, useState, useEffect } from 'react'
 import AppLayout from '@components/AppLayout'
 
 import useIsAppMounted from '@hooks/useIsAppMounted'
-import useIsAppStillLoading from '@hooks/useIsAppStillLoading'
 import useFeatureFlags from '@hooks/useFeatureFlags'
+import useAuthentication from '@hooks/useAuthentication'
 
 import { isSSR } from '@utils/helpers'
 
@@ -30,11 +30,11 @@ const useAppContext = () => {
 const AppProvider = ({ children }) => {
   const { isAppMounted } = useIsAppMounted()
 
-  // Any async data fetching goes here, example:
-  const { isAppStillLoading } = useIsAppStillLoading(3000)
-
   // Cache "features" at AppContext
   const { features } = useFeatureFlags()
+
+  // This is a fake authentication
+  const { logged } = useAuthentication()
 
   return (
     <AppContext.Provider
@@ -42,8 +42,8 @@ const AppProvider = ({ children }) => {
         isAppMounted,
         isSSR,
         isAppLoading: isSSR || !isAppMounted,
-        isAppStillLoading,
         features,
+        logged,
       }}
     >
       {children}
@@ -66,10 +66,9 @@ const AppContainer = ({ children, ...props }) => {
   // - Third party that applies globally are added here.
   // - App behaviours such as idle screen also goes here.
 
-  const { isAppMounted } = useAppContext()
-
   // key={isAppMounted} is required here to prevent hydration issues
   // https://www.gatsbyjs.com/docs/conceptual/react-hydration/
+  const { isAppMounted } = useAppContext()
   return (
     <AppLayout key={isAppMounted}>
       {children}
