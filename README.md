@@ -15,10 +15,11 @@ There are some relevant characteristics this PoC attempts to accomplish:
 
 ### How to use?
 
-1. `git clone git@github.com:bernardodiasc/poc-react-context.git`
-2. `yarn install`
-3. `yarn develop`
-4. Open http://localhost:8000/
+1. Make sure to have your API running at http://localhost:1337
+2. `git clone git@github.com:bernardodiasc/poc-react-context.git`
+3. `yarn install`
+4. `yarn develop`
+5. Open http://localhost:8000/
 
 ### And now what?
 

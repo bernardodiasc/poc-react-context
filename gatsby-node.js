@@ -19,12 +19,3 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     }
   })
 }
-
-exports.onCreatePage = ({ page, actions }) => {
-  const { createPage } = actions
-  // To support dynamic Job pages
-  if (page.path.match(/^\/jobs(?!\/my-applications)/)) {
-    page.matchPath = '/jobs/*'
-    createPage(page)
-  }
-}
