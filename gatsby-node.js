@@ -5,7 +5,7 @@
  */
 
 const path = require('path')
-const fetchFeatureFlags = require('./src/hooks/useFeatureFlags')
+const axios = require('axios')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
