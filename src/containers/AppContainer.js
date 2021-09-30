@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext } from 'react'
 
 import AppLayout from '@components/AppLayout'
 
@@ -26,8 +26,8 @@ const useAppContext = () => {
   return context
 }
 
-// The provider are used only once at wrapRootElement to avoid duplication of data
-const AppProvider = ({ children }) => {
+// The provider are used only once at wrapPageElement to avoid duplication of data
+const AppProvider = ({ children, pageContext }) => {
   const { isAppMounted } = useIsAppMounted()
 
   // Cache "features" at AppContext
@@ -44,6 +44,7 @@ const AppProvider = ({ children }) => {
         isAppLoading: isSSR || !isAppMounted,
         features,
         logged,
+        ...pageContext,
       }}
     >
       {children}
@@ -60,7 +61,9 @@ const AppProvider = ({ children }) => {
  *
  * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
-const AppContainer = ({ children, ...props }) => {
+const AppContainer = ({ element, props }) => {
+  const { isAppMounted } = useAppContext()
+
   // EFFECTS
   // - Redirect rules happens here during App Loading stage.
   // - Third party that applies globally are added here.
@@ -68,10 +71,9 @@ const AppContainer = ({ children, ...props }) => {
 
   // key={isAppMounted} is required here to prevent hydration issues
   // https://www.gatsbyjs.com/docs/conceptual/react-hydration/
-  const { isAppMounted } = useAppContext()
   return (
     <AppLayout key={isAppMounted}>
-      {children}
+      {element}
     </AppLayout>
   )
 }

@@ -5,6 +5,7 @@
  */
 
 const path = require('path')
+const fetchFeatureFlags = require('./src/hooks/useFeatureFlags')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -17,5 +18,19 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@utils': path.resolve(__dirname, 'src/utils')
       }
     }
+  })
+}
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  const { data: features } = await axios.get('http://localhost:1337/feature-flags')
+
+  deletePage(page)
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      features
+    },
   })
 }

@@ -7,7 +7,7 @@ export default function useFeatureFlags () {
   const [features, setFeatures] = useState(null)
   const { features: appFeatures } = useAppContext()
 
-  const fetchFeatureFlags = async () => {
+  const fetchFeatureFlags = async (setFeatures) => {
     try {
       const response = await api.get('/feature-flags')
       if (response.status === 200) {
@@ -18,9 +18,8 @@ export default function useFeatureFlags () {
         setFeatures(enabledFeatureflags)
       }
     } catch (error) {
-      setFeatures({})
       console.error(error)
-      // handleAPIError(error)
+      setFeatures({})
     }
   }
 
@@ -30,8 +29,7 @@ export default function useFeatureFlags () {
         setFeatures(appFeatures)
         return
       }
-
-      fetchFeatureFlags()
+      fetchFeatureFlags(setFeatures)
     }
     fetch()
   }, [])
