@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "generate": "node src/config/generator/generator.js"
+    "gen": "node src/config/generator/generator.js"
   },
   "dependencies": {
     "axios": "^0.21.4",

@@ -5,7 +5,9 @@ const ejs = require('ejs')
 
 const TEMPLATES_DIR = '/templates'
 const CHOICES = fs.readdirSync(`${__dirname}${TEMPLATES_DIR}`)
-const OUTPUT_DIR = path.resolve(__dirname, '..')
+const OUTPUT_DIR = path.resolve(__dirname, '../..')
+
+const capitalize = s => (s && s[0].toUpperCase() + s.slice(1)) || ""
 
 inquirer
   .prompt([
@@ -45,7 +47,7 @@ inquirer
   ])
   .then(answers => {
     const componentType = answers.componentType
-    const componentName = answers.componentName
+    const componentName = capitalize(answers.componentName)
     const parentComponent = answers.parentComponent
     const templatePath = `${__dirname}${TEMPLATES_DIR}/${componentType}`
     const componentPath = `${parentComponent ? `${parentComponent}/` : ''}${componentName}`
