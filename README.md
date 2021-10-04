@@ -48,3 +48,9 @@ It's not done yet. But any feedback are highly appreciate.
 - https://github.com/bernardodiasc/poc-react-context/blob/main/src/hooks/README.md
 - https://github.com/bernardodiasc/poc-react-context/blob/main/src/pages/README.md
 - https://github.com/bernardodiasc/poc-react-context/blob/main/src/utils/README.md
+
+## Generator
+
+1. `yarn gen`
+2. Choose a template type, pick a name...
+3. Checkout boilerplate files created
