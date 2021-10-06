@@ -13,44 +13,12 @@ There are some relevant characteristics this PoC attempts to accomplish:
 - [ ] Demonstrate loading states of sync and async data.
 - [ ] The SSR and SEO are all covered up.
 
-### How to use?
-
-1. Make sure to have your API running at http://localhost:1337
-2. `git clone git@github.com:bernardodiasc/poc-react-context.git`
-3. `yarn install`
-4. `yarn develop`
-5. Open http://localhost:8000/
-
 ### And now what?
 
 It's not done yet. But any feedback are highly appreciate.
 
-#### TO DO:
-
-- bypass loading screen on SSR and fix SEO
-- implement sitemap and block access to all pages
-- add auth sample preventing public access to all pages
-- add all desktop and mobile screens in the debug navigation
-
 ### Interesting parts
 
-- https://github.com/bernardodiasc/poc-react-context/blob/main/src/containers/AppContainer.js
-- https://github.com/bernardodiasc/poc-react-context/blob/main/gatsby-node.js
-- https://github.com/bernardodiasc/poc-react-context/blob/main/gatsby-browser.js
-- https://github.com/bernardodiasc/poc-react-context/blob/main/gatsby-ssr.js
-
-#### Read-me's
-
-> So far, it's all "TBD". To be made if become relevant.
-
-- https://github.com/bernardodiasc/poc-react-context/blob/main/src/components/README.md
-- https://github.com/bernardodiasc/poc-react-context/blob/main/src/containers/README.md
-- https://github.com/bernardodiasc/poc-react-context/blob/main/src/hooks/README.md
-- https://github.com/bernardodiasc/poc-react-context/blob/main/src/pages/README.md
-- https://github.com/bernardodiasc/poc-react-context/blob/main/src/utils/README.md
-
-## Generator
-
-1. `yarn gen`
-2. Choose a template type, pick a name...
-3. Checkout boilerplate files created
+- https://github.com/bernardodiasc/poc-react-context/blob/main/gatsby/gatsby-node.js
+- https://github.com/bernardodiasc/poc-react-context/blob/main/gatsby/gatsby-browser.js
+- https://github.com/bernardodiasc/poc-react-context/blob/main/gatsby/gatsby-ssr.js

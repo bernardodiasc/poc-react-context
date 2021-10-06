@@ -3,7 +3,7 @@ import Markdown from 'markdown-to-jsx'
 
 import NavigationLink from '@components/NavigationLink'
 
-import NAV_LISTS from "../../debug/navlists.yaml"
+import NAV_LISTS from "@data/navlists.yaml"
 
 const styles = {
   nav: {

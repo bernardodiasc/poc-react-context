@@ -11,12 +11,17 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        '@components': path.resolve(__dirname, 'src/components'),
-        '@config': path.resolve(__dirname, 'src/config'),
-        '@containers': path.resolve(__dirname, 'src/containers'),
-        '@hooks': path.resolve(__dirname, 'src/hooks'),
-        '@pages': path.resolve(__dirname, 'src/pages'),
-        '@utils': path.resolve(__dirname, 'src/utils')
+        // Gatsby
+        '@pages': path.resolve(__dirname, './src/pages'),
+        '@static': path.resolve(__dirname, './static'),
+
+        // Shared
+        '@components': path.resolve(__dirname, '../shared/components'),
+        '@config': path.resolve(__dirname, '../shared/config'),
+        '@containers': path.resolve(__dirname, '../shared/containers'),
+        '@data': path.resolve(__dirname, '../shared/data'),
+        '@hooks': path.resolve(__dirname, '../shared/hooks'),
+        '@utils': path.resolve(__dirname, '../shared/utils')
       }
     }
   })

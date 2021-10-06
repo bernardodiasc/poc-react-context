@@ -1,16 +1,13 @@
-import React, { PureComponent } from 'react'
+import * as React from 'react'
+
 import './<%= componentName %>.css'
 
-class <%= componentName %> extends PureComponent {
-  static defaultProps = {}
-
-  render() {
-    return (
-      <div className="<%= componentClass %>">
-        <%= componentName %>
-      </div>
-    )
-  }
+const <%= componentName %> = ({ children }) => {
+  return (
+    <div className="<%= componentClass %>">
+      {children}
+    </div>
+  )
 }
 
 export default <%= componentName %>
