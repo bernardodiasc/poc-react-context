@@ -1,0 +1,326 @@
+{
+  "config": {
+    "title": "Shared",
+    "description": "POC React Context, the shared bits",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "components/AppLayout.mdx",
+      "value": {
+        "name": "AppLayout",
+        "route": "/",
+        "id": "e8add348b574350133f853c6f1d9af8a",
+        "filepath": "components/AppLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/AppLayout.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "components-app-layout",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "applayout",
+            "depth": 1,
+            "value": "AppLayout"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "components/README.md",
+      "value": {
+        "id": "a753be5358ff7121405033e69e313722",
+        "filepath": "components/README.md",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "components-readme",
+        "route": "/components-readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "containers/README.md",
+      "value": {
+        "id": "5c1673334be0fba4e99720a7a03431ca",
+        "filepath": "containers/README.md",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/containers/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "containers-readme",
+        "route": "/containers-readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "hooks/README.md",
+      "value": {
+        "id": "ef81d95d6131aabb78d6d21b9d3c12fa",
+        "filepath": "hooks/README.md",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/hooks/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "hooks-readme",
+        "route": "/hooks-readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "utils/README.md",
+      "value": {
+        "id": "cf4e14c751e6b753eb9f76c9fc72937c",
+        "filepath": "utils/README.md",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/utils/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "utils-readme",
+        "route": "/utils-readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "config/generator/templates/components/README.md",
+      "value": {
+        "id": "cd85777c408646802264359a905b7af1",
+        "filepath": "config/generator/templates/components/README.md",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/config/generator/templates/components/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "config-generator-templates-components-readme",
+        "route": "/config-generator-templates-components-readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "-componentname-",
+            "depth": 1,
+            "value": "<%= componentName %>"
+          },
+          {
+            "slug": "how-to-use",
+            "depth": 2,
+            "value": "How to use"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          }
+        ]
+      }
+    },
+    {
+      "key": "config/generator/templates/containers/README.md",
+      "value": {
+        "id": "2ec3efcbd5701fd6eaa282304d7917b9",
+        "filepath": "config/generator/templates/containers/README.md",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/config/generator/templates/containers/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "config-generator-templates-containers-readme",
+        "route": "/config-generator-templates-containers-readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "-componentname-",
+            "depth": 1,
+            "value": "<%= componentName %>"
+          },
+          {
+            "slug": "how-to-use",
+            "depth": 2,
+            "value": "How to use"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "components/AppLayout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "AppLayout",
+          "methods": [],
+          "actualName": "AppLayout"
+        }
+      ]
+    },
+    {
+      "key": "components/LoadingLayout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "LoadingLayout",
+          "methods": [],
+          "actualName": "LoadingLayout"
+        }
+      ]
+    },
+    {
+      "key": "components/Navigation.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Navigation",
+          "methods": [],
+          "actualName": "Navigation"
+        }
+      ]
+    },
+    {
+      "key": "components/NavigationLink.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NavigationLink",
+          "methods": [],
+          "actualName": "NavigationLink"
+        }
+      ]
+    },
+    {
+      "key": "components/PageLayout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PageLayout",
+          "methods": [],
+          "actualName": "PageLayout",
+          "props": {
+            "title": {
+              "defaultValue": {
+                "value": "'X-Team'",
+                "computed": false
+              },
+              "required": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "components/SiteMetadata.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SiteMetadata",
+          "methods": [],
+          "actualName": "SiteMetadata",
+          "props": {
+            "description": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "''",
+                "computed": false
+              }
+            },
+            "lang": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "'en'",
+                "computed": false
+              }
+            },
+            "meta": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "object"
+                }
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "[]",
+                "computed": false
+              }
+            },
+            "keywords": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "string"
+                }
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "[]",
+                "computed": false
+              }
+            },
+            "title": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            },
+            "indexed": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "containers/AppContainer.js",
+      "value": [
+        {
+          "description": "AppContainer\n\nThis container is added to wrapPageElement.\nIt renders on top of all Gatsby's pages.\nIt has only one declared in the render tree during user session.\n\nhttps://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting",
+          "displayName": "AppContainer",
+          "methods": [],
+          "actualName": "AppContainer"
+        },
+        {
+          "description": "",
+          "displayName": "AppProvider",
+          "methods": [],
+          "actualName": "AppProvider"
+        }
+      ]
+    }
+  ]
+}
