@@ -1,13 +1,14 @@
-# use<%= componentName %> Hook
+# <%= componentName %> Hook
 
 ## How to use
 
 ```
-import { use<%= componentName %> } from '@<%= componentType %>/<%= componentPath %>'
+import { <%= componentName %> } from '@<%= componentType %>/<%= componentPath %>'
 
 const SampleComponent = () => {
-  const { anything } = use<%= componentName %>()
+  const { anything } = <%= componentName %>()
   return (
     <div>{`Just ${anything} here`}</div>
   )
 }
+```

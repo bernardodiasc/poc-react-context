@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function use<%= componentName %> () {
+function <%= componentName %> () {
   const [is<%= componentName %>, setIs<%= componentName %>] = useState(false)
 
   useEffect(() => {
@@ -10,4 +10,4 @@ function use<%= componentName %> () {
   return { is<%= componentName %>, setIs<%= componentName %> }
 }
 
-export default use<%= componentName %>
+export default <%= componentName %>
