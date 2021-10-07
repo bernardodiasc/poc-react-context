@@ -47,7 +47,7 @@ inquirer
   ])
   .then(answers => {
     const componentType = answers.componentType
-    const componentName = capitalize(answers.componentName)
+    const componentName = answers.componentName
     const parentComponent = answers.parentComponent
     const templatePath = `${__dirname}${TEMPLATES_DIR}/${componentType}`
     const componentPath = `${parentComponent ? `${parentComponent}/` : ''}${componentName}`
