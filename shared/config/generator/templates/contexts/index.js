@@ -1,6 +1,6 @@
-import <%= componentName %>Container from './Container'
-import <%= componentName %>Provider from './Provider'
-import <%= componentName %>Context from './Context'
+import <%= componentName %>Container from './<%= componentName %>Container'
+import <%= componentName %>Provider from './<%= componentName %>Provider'
+import <%= componentName %>Context from './<%= componentName %>Context'
 import use<%= componentName %>Context from './use<%= componentName %>Context'
 
 export {

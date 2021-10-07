@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import <%= componentName %>Context from './Context'
+import <%= componentName %>Context from './<%= componentName %>Context'
 
 // Safely guarded use<%= componentName %>Context hook
 const use<%= componentName %>Context = () => {

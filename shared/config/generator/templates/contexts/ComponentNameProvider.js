@@ -1,6 +1,6 @@
 import React from 'react'
 
-import <%= componentName %>Context from './Context'
+import <%= componentName %>Context from './<%= componentName %>Context'
 
 const <%= componentName %>Provider = ({ children, ...props }) => {
   return (
