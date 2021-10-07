@@ -1,9 +1,9 @@
-# <%= componentName %>
+# <%= componentName %> Component
 
 ## How to use
 
 ```
-import <%= componentName %> from '<%= componentType %>/<%= componentPath %>'
+import <%= componentName %> from '@<%= componentType %>/<%= componentPath %>'
 ```
 
 ```

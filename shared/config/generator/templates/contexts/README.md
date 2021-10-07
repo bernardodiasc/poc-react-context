@@ -6,7 +6,7 @@
 import {
   <%= componentName %>Provider,
   use<%= componentName %>Context
-} from '@contexts/<%= componentName %>'
+} from '@<%= componentType %>/<%= componentPath %>'
 
 const SampleComponent = () => {
   const { anything } = use<%= componentName %>Context()
