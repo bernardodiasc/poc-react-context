@@ -65,7 +65,7 @@ function createDirectoryContents (templatePath, componentFullPath, options) {
   filesToCreate.forEach(file => {
     const origFilePath = `${templatePath}/${file}`
     const stats = fs.statSync(origFilePath)
-    const checkName = file.match(/^ComponentName/g)
+    const checkName = file.match(/ComponentName/g)
     let newFile = file
 
     if (checkName && checkName[0] === 'ComponentName') {

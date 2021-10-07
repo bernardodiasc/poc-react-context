@@ -19,6 +19,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@components': path.resolve(__dirname, '../shared/components'),
         '@config': path.resolve(__dirname, '../shared/config'),
         '@containers': path.resolve(__dirname, '../shared/containers'),
+        '@contexts': path.resolve(__dirname, '../shared/contexts'),
         '@data': path.resolve(__dirname, '../shared/data'),
         '@hooks': path.resolve(__dirname, '../shared/hooks'),
         '@utils': path.resolve(__dirname, '../shared/utils')
