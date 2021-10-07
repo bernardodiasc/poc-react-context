@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 
-import { useAppContext } from '@containers/AppContainer'
+import { useAppContext } from '@contexts/App'
 import { isSSR } from '@utils/helpers'
 
-export default function useAuthentication () {
+function useAuthentication () {
   const [logged, setLogged] = useState(null)
   const { logged: appLogged } = useAppContext()
 
@@ -30,3 +30,5 @@ export default function useAuthentication () {
     logged
   }
 }
+
+export default useAuthentication

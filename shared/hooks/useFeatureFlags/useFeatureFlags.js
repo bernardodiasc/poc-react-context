@@ -1,9 +1,10 @@
+
 import { useEffect, useState } from 'react'
 
-import { useAppContext } from '@containers/AppContainer'
+import { useAppContext } from '@contexts/App'
 import { request as api } from '@utils/api-helpers'
 
-export default function useFeatureFlags () {
+function useFeatureFlags () {
   const [features, setFeatures] = useState(null)
   const { features: appFeatures } = useAppContext()
 
@@ -38,3 +39,5 @@ export default function useFeatureFlags () {
     features
   }
 }
+
+export default useFeatureFlags
