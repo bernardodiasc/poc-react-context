@@ -7,20 +7,22 @@
     "repository": null,
     "native": false,
     "themeConfig": {},
-    "separator": "-"
+    "separator": "-",
+    "src": "./components",
+    "files": "**/*.mdx"
   },
   "entries": [
     {
-      "key": "components/AppLayout.mdx",
+      "key": "components/components/AppLayout.mdx",
       "value": {
         "name": "AppLayout",
-        "route": "/",
+        "route": "/AppLayout",
         "id": "e8add348b574350133f853c6f1d9af8a",
-        "filepath": "components/AppLayout.mdx",
+        "filepath": "components/components/AppLayout.mdx",
         "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/AppLayout.mdx",
         "link": "",
         "hidden": false,
-        "slug": "components-app-layout",
+        "slug": "components-components-app-layout",
         "menu": "",
         "headings": [
           {
@@ -37,140 +39,59 @@
       }
     },
     {
-      "key": "components/README.md",
+      "key": "components/components/PageLayout.mdx",
       "value": {
-        "id": "a753be5358ff7121405033e69e313722",
-        "filepath": "components/README.md",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/README.md",
+        "name": "PageLayout",
+        "route": "/PageLayout",
+        "id": "45ae56dd238e5c8ce20de33340495ee4",
+        "filepath": "components/components/PageLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/PageLayout.mdx",
         "link": "",
         "hidden": false,
-        "slug": "components-readme",
-        "route": "/components-readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": []
-      }
-    },
-    {
-      "key": "containers/README.md",
-      "value": {
-        "id": "5c1673334be0fba4e99720a7a03431ca",
-        "filepath": "containers/README.md",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/containers/README.md",
-        "link": "",
-        "hidden": false,
-        "slug": "containers-readme",
-        "route": "/containers-readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": []
-      }
-    },
-    {
-      "key": "hooks/README.md",
-      "value": {
-        "id": "ef81d95d6131aabb78d6d21b9d3c12fa",
-        "filepath": "hooks/README.md",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/hooks/README.md",
-        "link": "",
-        "hidden": false,
-        "slug": "hooks-readme",
-        "route": "/hooks-readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": []
-      }
-    },
-    {
-      "key": "utils/README.md",
-      "value": {
-        "id": "cf4e14c751e6b753eb9f76c9fc72937c",
-        "filepath": "utils/README.md",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/utils/README.md",
-        "link": "",
-        "hidden": false,
-        "slug": "utils-readme",
-        "route": "/utils-readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": []
-      }
-    },
-    {
-      "key": "config/generator/templates/components/README.md",
-      "value": {
-        "id": "cd85777c408646802264359a905b7af1",
-        "filepath": "config/generator/templates/components/README.md",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/config/generator/templates/components/README.md",
-        "link": "",
-        "hidden": false,
-        "slug": "config-generator-templates-components-readme",
-        "route": "/config-generator-templates-components-readme",
-        "name": "Readme",
+        "slug": "components-components-page-layout",
         "menu": "",
         "headings": [
           {
-            "slug": "-componentname-",
+            "slug": "pagelayout",
             "depth": 1,
-            "value": "<%= componentName %>"
+            "value": "PageLayout"
           },
           {
-            "slug": "how-to-use",
+            "slug": "basic-usage",
             "depth": 2,
-            "value": "How to use"
-          },
-          {
-            "slug": "properties",
-            "depth": 2,
-            "value": "Properties"
+            "value": "Basic usage"
           }
         ]
       }
     },
     {
-      "key": "config/generator/templates/containers/README.md",
+      "key": "components/components/Gliphs/Gliphs.mdx",
       "value": {
-        "id": "2ec3efcbd5701fd6eaa282304d7917b9",
-        "filepath": "config/generator/templates/containers/README.md",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/config/generator/templates/containers/README.md",
+        "name": "Gliphs",
+        "route": "/Gliphs",
+        "id": "02db155c88b1fb9590713c7da62c9228",
+        "filepath": "components/components/Gliphs/Gliphs.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/Gliphs/Gliphs.mdx",
         "link": "",
         "hidden": false,
-        "slug": "config-generator-templates-containers-readme",
-        "route": "/config-generator-templates-containers-readme",
-        "name": "Readme",
+        "slug": "components-components-gliphs-gliphs",
         "menu": "",
         "headings": [
           {
-            "slug": "-componentname-",
+            "slug": "gliphs",
             "depth": 1,
-            "value": "<%= componentName %>"
+            "value": "Gliphs"
           },
           {
-            "slug": "how-to-use",
+            "slug": "basic-usage",
             "depth": 2,
-            "value": "How to use"
-          },
-          {
-            "slug": "properties",
-            "depth": 2,
-            "value": "Properties"
+            "value": "Basic usage"
           }
         ]
       }
     }
   ],
   "props": [
-    {
-      "key": "components/AppLayout.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "AppLayout",
-          "methods": [],
-          "actualName": "AppLayout"
-        }
-      ]
-    },
     {
       "key": "components/LoadingLayout.js",
       "value": [
@@ -306,19 +227,13 @@
       ]
     },
     {
-      "key": "containers/AppContainer.js",
+      "key": "components/Gliphs/Gliphs.js",
       "value": [
         {
-          "description": "AppContainer\n\nThis container is added to wrapPageElement.\nIt renders on top of all Gatsby's pages.\nIt has only one declared in the render tree during user session.\n\nhttps://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting",
-          "displayName": "AppContainer",
-          "methods": [],
-          "actualName": "AppContainer"
-        },
-        {
           "description": "",
-          "displayName": "AppProvider",
+          "displayName": "Gliphs",
           "methods": [],
-          "actualName": "AppProvider"
+          "actualName": "Gliphs"
         }
       ]
     }

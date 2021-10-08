@@ -1,1 +1,3 @@
-export default useFeatureFlags from './useFeatureFlags'
+import useFeatureFlags from './useFeatureFlags'
+
+export default useFeatureFlags

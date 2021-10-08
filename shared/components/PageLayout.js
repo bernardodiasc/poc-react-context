@@ -4,8 +4,10 @@ import { useLocation } from '@reach/router'
 
 import SiteMetadata from '@components/SiteMetadata'
 import LoadingLayout from '@components/LoadingLayout'
+// import Gliph from '@components/Gliph'
+import X from './Gliphs/svgs/x.svg'
 
-import { useAppContext } from '@containers/AppContainer'
+import { useAppContext } from '@contexts/App'
 import useFeatureFlags from '@hooks/useFeatureFlags'
 
 const PageLayout = ({ title = 'X-Team', children }) => {
@@ -16,15 +18,11 @@ const PageLayout = ({ title = 'X-Team', children }) => {
   return (
     <article>
       <SiteMetadata title={title} />
-      {screenshot ? (
-        <img src={`${process.env.GATSBY_DOMAIN_URL}screenshots/desktop/${screenshot}`} />
-      ) : (
-        <>
-          {children}
-          <hr />
-          Try clicking on a route in the debug navigation.
-        </>
-      )}
+      {/* <img src={screenshot
+        ? `${process.env.GATSBY_DOMAIN_URL}screenshots/desktop/${screenshot}`
+        : } /> */}
+      {/* <img src={X} /> */}
+      <X />
     </article>
   )
 }

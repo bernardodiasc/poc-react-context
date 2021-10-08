@@ -27,7 +27,7 @@ const config = {
       resolve: 'gatsby-theme-docz',
       options: {
         themeConfig: {},
-        src: './',
+        src: './components',
         gatsbyRoot: null,
         themesDir: 'src',
         mdxExtensions: ['.md', '.mdx'],
@@ -50,7 +50,7 @@ const config = {
         base: '/',
         source: './',
         'gatsby-root': null,
-        files: '**/*.{md,markdown,mdx}',
+        files: '**/*.mdx',
         public: '/public',
         dest: '.docz/dist',
         d: '.docz/dist',

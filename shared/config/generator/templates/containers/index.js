@@ -1,1 +1,3 @@
-export default <%= componentName %>Container from './<%= componentName %>Container'
+import <%= componentName %>Container from './<%= componentName %>Container'
+
+export default <%= componentName %>Container

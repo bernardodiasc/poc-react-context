@@ -1,11 +1,6 @@
 const path = require('path')
 
 exports.onCreateWebpackConfig = args => {
-  console.log('===================================')
-  console.log('__dirname:', __dirname)
-  console.log('../:', path.resolve(__dirname, '../'))
-  console.log('../components:', path.resolve(__dirname, '../components'))
-  console.log('===================================')
   args.actions.setWebpackConfig({
     resolve: {
       // ⚠ Note the '..' in the path because the docz gatsby project lives in the `.docz` directory

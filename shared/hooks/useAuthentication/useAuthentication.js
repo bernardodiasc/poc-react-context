@@ -24,7 +24,7 @@ function useAuthentication () {
       checkPassword()
     }
     checkAuthentication()
-  }, [])
+  }, [appLogged])
 
   return {
     logged

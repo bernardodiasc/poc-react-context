@@ -33,7 +33,7 @@ function useFeatureFlags () {
       fetchFeatureFlags(setFeatures)
     }
     fetch()
-  }, [])
+  }, [appFeatures])
 
   return {
     features

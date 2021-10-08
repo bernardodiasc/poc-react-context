@@ -1,1 +1,3 @@
-export default useIsAppMounted from './useIsAppMounted'
+import useIsAppMounted from './useIsAppMounted'
+
+export default useIsAppMounted

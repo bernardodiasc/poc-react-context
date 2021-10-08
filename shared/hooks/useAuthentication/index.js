@@ -1,1 +1,3 @@
-export default useAuthentication from './useAuthentication'
+import useAuthentication from './useAuthentication'
+
+export default useAuthentication

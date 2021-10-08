@@ -1,4 +1,6 @@
-import React, { createContext } from 'react'
+import { createContext } from 'react'
+
+import { isSSR } from '@utils/helpers'
 
 const initialAppState = {
   isAppMounted: false,
