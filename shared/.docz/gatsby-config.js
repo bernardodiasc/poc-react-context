@@ -27,7 +27,7 @@ const config = {
       resolve: 'gatsby-theme-docz',
       options: {
         themeConfig: {},
-        src: './components',
+        src: './src/components',
         gatsbyRoot: null,
         themesDir: 'src',
         mdxExtensions: ['.md', '.mdx'],

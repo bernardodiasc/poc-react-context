@@ -8,21 +8,21 @@
     "native": false,
     "themeConfig": {},
     "separator": "-",
-    "src": "./components",
+    "src": "./src/components",
     "files": "**/*.mdx"
   },
   "entries": [
     {
-      "key": "components/components/AppLayout.mdx",
+      "key": "src/components/src/components/AppLayout.mdx",
       "value": {
         "name": "AppLayout",
         "route": "/AppLayout",
-        "id": "e8add348b574350133f853c6f1d9af8a",
-        "filepath": "components/components/AppLayout.mdx",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/AppLayout.mdx",
+        "id": "3a3a915242d3096dd0b575f15fed9638",
+        "filepath": "src/components/src/components/AppLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/AppLayout.mdx",
         "link": "",
         "hidden": false,
-        "slug": "components-components-app-layout",
+        "slug": "src-components-src-components-app-layout",
         "menu": "",
         "headings": [
           {
@@ -39,16 +39,16 @@
       }
     },
     {
-      "key": "components/components/PageLayout.mdx",
+      "key": "src/components/src/components/PageLayout.mdx",
       "value": {
         "name": "PageLayout",
         "route": "/PageLayout",
-        "id": "45ae56dd238e5c8ce20de33340495ee4",
-        "filepath": "components/components/PageLayout.mdx",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/PageLayout.mdx",
+        "id": "19f45e7de09596aea1d0fdc9e6b269a5",
+        "filepath": "src/components/src/components/PageLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/PageLayout.mdx",
         "link": "",
         "hidden": false,
-        "slug": "components-components-page-layout",
+        "slug": "src-components-src-components-page-layout",
         "menu": "",
         "headings": [
           {
@@ -65,16 +65,16 @@
       }
     },
     {
-      "key": "components/components/Gliphs/Gliphs.mdx",
+      "key": "src/components/src/components/Gliphs/Gliphs.mdx",
       "value": {
         "name": "Gliphs",
         "route": "/Gliphs",
-        "id": "02db155c88b1fb9590713c7da62c9228",
-        "filepath": "components/components/Gliphs/Gliphs.mdx",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/components/Gliphs/Gliphs.mdx",
+        "id": "c9fcf5815ad527d5cc2c9e1dd3a4b00f",
+        "filepath": "src/components/src/components/Gliphs/Gliphs.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/Gliphs/Gliphs.mdx",
         "link": "",
         "hidden": false,
-        "slug": "components-components-gliphs-gliphs",
+        "slug": "src-components-src-components-gliphs-gliphs",
         "menu": "",
         "headings": [
           {
@@ -93,7 +93,7 @@
   ],
   "props": [
     {
-      "key": "components/LoadingLayout.js",
+      "key": "src/components/LoadingLayout.js",
       "value": [
         {
           "description": "",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "key": "components/Navigation.js",
+      "key": "src/components/Navigation.js",
       "value": [
         {
           "description": "",
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "key": "components/NavigationLink.js",
+      "key": "src/components/NavigationLink.js",
       "value": [
         {
           "description": "",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "key": "components/PageLayout.js",
+      "key": "src/components/PageLayout.js",
       "value": [
         {
           "description": "",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "key": "components/SiteMetadata.js",
+      "key": "src/components/SiteMetadata.js",
       "value": [
         {
           "description": "",
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "key": "components/Gliphs/Gliphs.js",
+      "key": "src/components/Gliphs/Gliphs.js",
       "value": [
         {
           "description": "",

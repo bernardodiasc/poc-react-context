@@ -16,13 +16,12 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@static': path.resolve(__dirname, './static'),
 
         // Shared
-        '@components': path.resolve(__dirname, '../shared/components'),
-        '@config': path.resolve(__dirname, '../shared/config'),
-        '@containers': path.resolve(__dirname, '../shared/containers'),
-        '@contexts': path.resolve(__dirname, '../shared/contexts'),
-        '@data': path.resolve(__dirname, '../shared/data'),
-        '@hooks': path.resolve(__dirname, '../shared/hooks'),
-        '@utils': path.resolve(__dirname, '../shared/utils')
+        '@dev': path.resolve(__dirname, '../shared/dev'),
+        '@components': path.resolve(__dirname, '../shared/src/components'),
+        '@containers': path.resolve(__dirname, '../shared/src/containers'),
+        '@contexts': path.resolve(__dirname, '../shared/src/contexts'),
+        '@hooks': path.resolve(__dirname, '../shared/src/hooks'),
+        '@utils': path.resolve(__dirname, '../shared/src/utils')
       }
     }
   })

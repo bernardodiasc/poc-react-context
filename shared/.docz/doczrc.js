@@ -1,4 +1,4 @@
 export default {
-  src: './components',
+  src: './src/components',
   files: '**/*.mdx'
 }
