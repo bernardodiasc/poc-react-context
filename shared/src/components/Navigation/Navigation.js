@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Markdown from 'markdown-to-jsx'
 
-import NavigationLink from '@components/NavigationLink'
+import NavigationLink from '@components/Navigation/NavigationLink'
 
 import SCREENS from "@dev/fixtures/screens.yaml"
 

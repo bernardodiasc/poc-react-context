@@ -1,10 +1,10 @@
 ---
 name: <%= componentName %>
-route: /
+route: /<%= componentPath %>
 ---
 
 import { Playground, Props } from 'docz'
-import <%= componentName %> from '@components/<%= componentName %>'
+import <%= componentName %> from '@<%= componentType %>/<%= componentPath %>'
 
 # <%= componentName %>
 

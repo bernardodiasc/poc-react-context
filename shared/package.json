@@ -5,7 +5,7 @@
   "description": "POC React Context, the shared bits",
   "author": "Bernardo Dias",
   "scripts": {
-    "gen": "node config/generator/generator.js",
+    "gen": "node dev/generator/generator.js",
     "dev": "yarn docz dev"
   },
   "dependencies": {

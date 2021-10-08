@@ -5,7 +5,7 @@ const ejs = require('ejs')
 
 const TEMPLATES_DIR = '/templates'
 const CHOICES = fs.readdirSync(`${__dirname}${TEMPLATES_DIR}`)
-const OUTPUT_DIR = path.resolve(__dirname, '../..')
+const OUTPUT_DIR = path.resolve(__dirname, '../../src')
 
 const capitalize = s => (s && s[0].toUpperCase() + s.slice(1)) || ""
 

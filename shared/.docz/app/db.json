@@ -13,48 +13,22 @@
   },
   "entries": [
     {
-      "key": "src/components/src/components/AppLayout.mdx",
+      "key": "src/components/src/components/AppLayout/AppLayout.mdx",
       "value": {
         "name": "AppLayout",
         "route": "/AppLayout",
-        "id": "3a3a915242d3096dd0b575f15fed9638",
-        "filepath": "src/components/src/components/AppLayout.mdx",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/AppLayout.mdx",
+        "id": "697fafbb07b23ab616ecbc0aa0e68ab1",
+        "filepath": "src/components/src/components/AppLayout/AppLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/AppLayout/AppLayout.mdx",
         "link": "",
         "hidden": false,
-        "slug": "src-components-src-components-app-layout",
+        "slug": "src-components-src-components-app-layout-app-layout",
         "menu": "",
         "headings": [
           {
             "slug": "applayout",
             "depth": 1,
             "value": "AppLayout"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/src/components/PageLayout.mdx",
-      "value": {
-        "name": "PageLayout",
-        "route": "/PageLayout",
-        "id": "19f45e7de09596aea1d0fdc9e6b269a5",
-        "filepath": "src/components/src/components/PageLayout.mdx",
-        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/PageLayout.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "src-components-src-components-page-layout",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "pagelayout",
-            "depth": 1,
-            "value": "PageLayout"
           },
           {
             "slug": "basic-usage",
@@ -89,11 +63,152 @@
           }
         ]
       }
+    },
+    {
+      "key": "src/components/src/components/LoadingLayout/LoadingLayout.mdx",
+      "value": {
+        "name": "LoadingLayout",
+        "route": "/LoadingLayout",
+        "id": "af5050bab967f353e562e7e267acf414",
+        "filepath": "src/components/src/components/LoadingLayout/LoadingLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/LoadingLayout/LoadingLayout.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-src-components-loading-layout-loading-layout",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "loadinglayout",
+            "depth": 1,
+            "value": "LoadingLayout"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/src/components/Navigation/Navigation.mdx",
+      "value": {
+        "name": "Navigation",
+        "route": "/Navigation",
+        "id": "67ab2d503ce3005fc17ba271b26be9e0",
+        "filepath": "src/components/src/components/Navigation/Navigation.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/Navigation/Navigation.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-src-components-navigation-navigation",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "navigation",
+            "depth": 1,
+            "value": "Navigation"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/src/components/PageLayout/PageLayout.mdx",
+      "value": {
+        "name": "PageLayout",
+        "route": "/PageLayout",
+        "id": "e0a045cd07e5d7936b2e4f68ddd7c7c1",
+        "filepath": "src/components/src/components/PageLayout/PageLayout.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/PageLayout/PageLayout.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-src-components-page-layout-page-layout",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "pagelayout",
+            "depth": 1,
+            "value": "PageLayout"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/src/components/SiteMetadata/SiteMetadata.mdx",
+      "value": {
+        "name": "SiteMetadata",
+        "route": "/SiteMetadata",
+        "id": "46763d8a7e143596a5da423d9e5c3d25",
+        "filepath": "src/components/src/components/SiteMetadata/SiteMetadata.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/SiteMetadata/SiteMetadata.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-src-components-site-metadata-site-metadata",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "sitemetadata",
+            "depth": 1,
+            "value": "SiteMetadata"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/src/components/Navigation/NavigationLink/NavigationLink.mdx",
+      "value": {
+        "name": "NavigationLink",
+        "route": "/Navigation/NavigationLink",
+        "id": "08c1cf17c1f1bc04878df28ed609ec20",
+        "filepath": "src/components/src/components/Navigation/NavigationLink/NavigationLink.mdx",
+        "fullpath": "/Users/bernardo/Sites/x-team/poc-react-context/shared/src/components/Navigation/NavigationLink/NavigationLink.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-src-components-navigation-navigation-link-navigation-link",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "navigationlink",
+            "depth": 1,
+            "value": "NavigationLink"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
     }
   ],
   "props": [
     {
-      "key": "src/components/LoadingLayout.js",
+      "key": "src/components/Gliphs/Gliphs.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gliphs",
+          "methods": [],
+          "actualName": "Gliphs"
+        }
+      ]
+    },
+    {
+      "key": "src/components/LoadingLayout/LoadingLayout.js",
       "value": [
         {
           "description": "",
@@ -104,7 +219,7 @@
       ]
     },
     {
-      "key": "src/components/Navigation.js",
+      "key": "src/components/Navigation/Navigation.js",
       "value": [
         {
           "description": "",
@@ -115,18 +230,7 @@
       ]
     },
     {
-      "key": "src/components/NavigationLink.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "NavigationLink",
-          "methods": [],
-          "actualName": "NavigationLink"
-        }
-      ]
-    },
-    {
-      "key": "src/components/PageLayout.js",
+      "key": "src/components/PageLayout/PageLayout.js",
       "value": [
         {
           "description": "",
@@ -146,7 +250,7 @@
       ]
     },
     {
-      "key": "src/components/SiteMetadata.js",
+      "key": "src/components/SiteMetadata/SiteMetadata.js",
       "value": [
         {
           "description": "",
@@ -227,13 +331,13 @@
       ]
     },
     {
-      "key": "src/components/Gliphs/Gliphs.js",
+      "key": "src/components/Navigation/NavigationLink/NavigationLink.js",
       "value": [
         {
           "description": "",
-          "displayName": "Gliphs",
+          "displayName": "NavigationLink",
           "methods": [],
-          "actualName": "Gliphs"
+          "actualName": "NavigationLink"
         }
       ]
     }
