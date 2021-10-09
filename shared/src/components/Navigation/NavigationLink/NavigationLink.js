@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from  'gatsby'
+// import { Link } from  'gatsby'
 
 const styles = {
   active: {
@@ -7,15 +7,16 @@ const styles = {
   }
 }
 
-const NavigationLink = ({ children, to, state }) => (
-  <Link
-    to={to}
-    activeStyle={styles.active}
-    // partiallyActive={true}
-    state={state}
-  >
-    {children}
-  </Link>
-)
+const NavigationLink = ({ children, to, state }) => (<div></div>)
+// const NavigationLink = ({ children, to, state }) => (
+//   <Link
+//     to={to}
+//     activeStyle={styles.active}
+//     // partiallyActive={true}
+//     state={state}
+//   >
+//     {children}
+//   </Link>
+// )
 
 export default NavigationLink

@@ -1,17 +1,11 @@
----
-name: <%= componentName %>
-route: /<%= componentPath %>
----
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
 
-import { Playground, Props } from 'docz'
 import <%= componentName %> from '@<%= componentType %>/<%= componentPath %>'
 
-# <%= componentName %>
+<Meta title="<%= componentName %>" component={<%= componentName %>} />
 
-<Props of={<%= componentName %>} />
-
-## Basic usage
-
-<Playground>
-  <<%= componentName %>>test</<%= componentName %>>
-</Playground>
+<Canvas>
+  <Story name="basic">
+    <<%= componentName %> />
+  </Story>
+</Canvas>

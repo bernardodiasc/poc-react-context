@@ -3,7 +3,7 @@ import Markdown from 'markdown-to-jsx'
 
 import NavigationLink from '@components/Navigation/NavigationLink'
 
-import SCREENS from "@dev/fixtures/screens.yaml"
+// import SCREENS from "@dev/fixtures/screens.yaml"
 
 const styles = {
   nav: {
@@ -64,7 +64,7 @@ const Navigation = () => {
   return isExpanded ? (
     <nav style={styles.nav}>
       <button style={styles.close} onClick={toggleNav}>Close debug panel</button>
-      {SCREENS.map((list, key) => renderNavigaation(list, key))}
+      {/* {SCREENS.map((list, key) => renderNavigaation(list, key))} */}
     </nav>
   ) : <button style={styles.open} onClick={toggleNav}>Open debug panel</button>
 }

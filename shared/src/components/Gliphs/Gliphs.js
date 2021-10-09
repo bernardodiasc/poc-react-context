@@ -2,10 +2,10 @@ import * as React from 'react'
 
 import './Gliphs.css'
 
-const Gliphs = ({ children }) => {
+const Gliphs = () => {
   return (
     <div className="Gliphs">
-      {children}
+      gliphs
     </div>
   )
 }
