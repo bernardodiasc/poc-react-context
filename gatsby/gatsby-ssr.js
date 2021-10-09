@@ -6,7 +6,8 @@
 
 import * as React from 'react'
 
-import { AppProvider, AppContainer } from '@containers/AppContainer'
+import { AppProvider } from '@contexts/App'
+import AppContainer from '@containers/App'
 
 export const wrapPageElement = ({ element, props }) => (
   <AppProvider pageContext={props.pageContext}>
