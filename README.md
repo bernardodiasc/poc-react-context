@@ -24,4 +24,4 @@
 1. Go to `shared` directory
 2. `yarn install` (if not installed already)
 3. `yarn dev`
-4. Open http://localhost:3000/
+4. Open http://localhost:6006/
