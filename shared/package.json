@@ -6,8 +6,15 @@
   "author": "Bernardo Dias",
   "scripts": {
     "gen": "node dev/generator/generator.js",
-    "dev": "start-storybook -p 6006 -s public",
-    "docs": "start-storybook -p 6006 -s public --docs --no-manager-cache",
-    "build": "build-storybook -s public"
+    "dev": "../node_modules/@storybook/react/bin/index.js -p 6006 -s static",
+    "docs": "../node_modules/@storybook/react/bin/index.js -p 6006 -s static --docs --no-manager-cache",
+    "build": "../node_modules/@storybook/react/bin/build.js -s static"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.3.10"
   }
 }
