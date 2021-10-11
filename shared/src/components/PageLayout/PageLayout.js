@@ -3,7 +3,7 @@ import * as React from 'react'
 import SiteMetadata from '@components/SiteMetadata'
 import LoadingLayout from '@components/LoadingLayout'
 
-import { useAppContext } from '@contexts/App'
+import useAppContext from '@contexts/App'
 import useFeatureFlags from '@hooks/useFeatureFlags'
 
 const PageLayout = ({ title = 'X-Team', children }) => {

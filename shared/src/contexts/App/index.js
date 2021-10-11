@@ -1,7 +1,2 @@
-import AppProvider from './AppProvider'
-import useAppContext from './useAppContext'
-
-export {
-  AppProvider,
-  useAppContext
-}
+export { default } from './useAppContext'
+export { AppProvider } from './AppProvider'

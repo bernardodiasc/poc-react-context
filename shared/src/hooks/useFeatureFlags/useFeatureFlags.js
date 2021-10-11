@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
 
-import { useAppContext } from '@contexts/App'
-import { request as api } from '@utils/api-helpers'
+import useAppContext from '@contexts/App'
 
 function useFeatureFlags () {
   return useQuery(

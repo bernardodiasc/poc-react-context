@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import { useAppContext } from '@contexts/App'
+import useAppContext from '@contexts/App'
 import { isSSR } from '@utils/helpers'
 
 function useAuthentication () {

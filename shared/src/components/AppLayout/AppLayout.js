@@ -4,7 +4,7 @@ import SiteMetadata from '@components/SiteMetadata'
 import LoadingLayout from '@components/LoadingLayout'
 import Navigation from '@components/Navigation'
 
-import { useAppContext } from '@contexts/App'
+import useAppContext from '@contexts/App'
 
 const AppLayout = ({ children }) => {
   const { isAppMounted, isSSR, features, logged } = useAppContext()

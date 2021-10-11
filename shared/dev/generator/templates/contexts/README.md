@@ -3,10 +3,7 @@
 ## How to use
 
 ```
-import {
-  <%= componentName %>Provider,
-  use<%= componentName %>Context
-} from '@<%= componentType %>/<%= componentPath %>'
+import use<%= componentName %>Context, { <%= componentName %>Provider } from '@<%= componentType %>/<%= componentPath %>'
 
 const SampleComponent = () => {
   const { anything } = use<%= componentName %>Context()

@@ -4,8 +4,7 @@ import { isSSR } from '@utils/helpers'
 
 const initialAppState = {
   isAppMounted: false,
-  isSSR,
-  isAppLoading: true
+  isSSR
 }
 const AppContext = createContext(initialAppState)
 

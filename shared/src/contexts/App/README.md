@@ -3,10 +3,7 @@
 ## How to use
 
 ```
-import {
-  AppProvider,
-  useAppContext
-} from '@contexts/App'
+import useAppContext, { AppProvider } from '@contexts/App'
 
 const SampleComponent = () => {
   const { anything } = useAppContext()

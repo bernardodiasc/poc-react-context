@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useAppContext } from '@contexts/App'
+import useAppContext from '@contexts/App'
 
 import AppLayout from '@components/AppLayout'
 
