@@ -8,11 +8,11 @@ function useAuthentication () {
   const { logged: appLogged } = useAppContext()
 
   const checkPassword = async () => {
-    const password = isSSR ? undefined : window.prompt('What\'s the password?', '')
+    // const password = isSSR ? undefined : window.prompt('What\'s the password?', '')
     // Super secure authentication!
-    if (password === 'x-team') {
+    // if (password === 'x-team') {
       setLogged(true)
-    }
+    // }
   }
 
   useEffect(() => {

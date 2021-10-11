@@ -1,6 +1,8 @@
 import React from 'react'
+import { ReactQueryDevtools } from 'react-query/devtools'
 
 import useAppContext from '@contexts/App'
+import useFeatureFlags from '@hooks/useFeatureFlags'
 
 import AppLayout from '@components/AppLayout'
 
@@ -14,7 +16,13 @@ import AppLayout from '@components/AppLayout'
  * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
  const AppContainer = ({ element, props }) => {
-  const { isAppMounted } = useAppContext()
+  const { isAppMounted, isSSR } = useAppContext()
+  const { data: features } = useFeatureFlags()
+  console.log(features)
+
+  const requiredData = Boolean(features)
+  const isAppReady = (isAppMounted && requiredData) || isSSR
+  const isDebugging = features?.DEBUG_TOOLS
 
   // EFFECTS
   // - Redirect rules happens here during App Loading stage.
@@ -24,8 +32,11 @@ import AppLayout from '@components/AppLayout'
   // key={isAppMounted} is required here to prevent hydration issues
   // https://www.gatsbyjs.com/docs/conceptual/react-hydration/
   return (
-    <AppLayout key={isAppMounted}>
+    <AppLayout key={isAppMounted} isLoading={!isAppReady} isDebugging={isDebugging}>
       {element}
+      {isDebugging && (
+        <ReactQueryDevtools initialIsOpen={false} />
+      )}
     </AppLayout>
   )
 }

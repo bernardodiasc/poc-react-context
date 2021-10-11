@@ -1,13 +1,13 @@
-const path = require("path")
+const path = require('path')
 
 module.exports = {
-  "stories": [
-    "../src/components/**/*.stories.@(js|mdx)"
+  'stories': [
+    '../src/components/**/*.stories.@(js|mdx)'
   ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-docs"
+  'addons': [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-docs'
   ],
   webpackFinal: async (config) => {
     config.resolve.alias = {
@@ -24,6 +24,12 @@ module.exports = {
       test: /\.ya?ml$/,
       type: 'json', // Required by Webpack v4
       use: 'yaml-loader'
+    })
+
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader?modules=true'],
+      include: path.resolve(__dirname, '../components'),
     })
 
     return config

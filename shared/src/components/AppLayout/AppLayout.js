@@ -4,20 +4,22 @@ import SiteMetadata from '@components/SiteMetadata'
 import LoadingLayout from '@components/LoadingLayout'
 import Navigation from '@components/Navigation'
 
-import useAppContext from '@contexts/App'
+import styles from './AppLayout.module.css'
 
-const AppLayout = ({ children }) => {
-  const { isAppMounted, isSSR, features, logged } = useAppContext()
-  const isAppReady = (isAppMounted && features && logged) || isSSR
-  return isAppReady ? (
-    <main>
-      {features?.DEBUG_TOOLS && <Navigation />}
-      {children}
-    </main>
-  ) : (
+const AppLayout = ({ isLoading, isDebugging, children }) => {
+  return isLoading ? (
     <main>
       <SiteMetadata title="Loading App..." />
       <LoadingLayout />
+    </main>
+  ) : (
+    <main>
+      {isDebugging && (
+        <div className={styles.debugPanel}>
+          <Navigation />
+        </div>
+      )}
+      {children}
     </main>
   )
 }

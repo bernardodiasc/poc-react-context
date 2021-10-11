@@ -7,9 +7,6 @@ import NavigationLink from '@components/Navigation/NavigationLink'
 
 const styles = {
   nav: {
-    position: 'absolute',
-    top: '20px',
-    right: '20px',
     background: 'white',
     padding: '30px',
     border: '1px dashed',
@@ -18,21 +15,14 @@ const styles = {
     overflow: 'auto',
     opacity: '0.9',
   },
+  closed: {
+    height: 'auto',
+  },
   ul: {
     margin: '1em 0 2.5em',
     padding: '0 0 0 1em',
     fontSize: '1.1rem',
     lineHeight: '1.4',
-  },
-  open: {
-    position: 'absolute',
-    top: '20px',
-    right: '20px',
-  },
-  close: {
-    position: 'absolute',
-    top: '-1px',
-    right: '-1px',
   },
 }
 
@@ -61,12 +51,18 @@ const Navigation = () => {
     </details>
   )
 
-  return isExpanded ? (
+  return (
     <nav style={styles.nav}>
-      <button style={styles.close} onClick={toggleNav}>Close debug panel</button>
-      {/* {SCREENS.map((list, key) => renderNavigaation(list, key))} */}
+      {isExpanded ? (
+        <>
+          <button onClick={toggleNav}>Close debug panel</button>
+          {/* {SCREENS.map((list, key) => renderNavigaation(list, key))} */}
+        </>
+      ) : (
+        <button onClick={toggleNav}>Open debug panel</button>
+      )}
     </nav>
-  ) : <button style={styles.open} onClick={toggleNav}>Open debug panel</button>
+  )
 }
 
 export default Navigation

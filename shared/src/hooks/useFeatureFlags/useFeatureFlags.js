@@ -6,7 +6,14 @@ import useAppContext from '@contexts/App'
 function useFeatureFlags () {
   return useQuery(
     'feature-flags',
-    () => fetch('http://localhost:1337/feature-flags').then(res => res.json())
+    async () => {
+      try {
+        const result = await fetch('http://localhost:1337/feature-flags')
+        return result.json()
+      } catch (error) {
+        throw new Error(error)
+      }
+    }
   )
 }
 

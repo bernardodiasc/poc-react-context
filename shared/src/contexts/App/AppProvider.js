@@ -8,7 +8,13 @@ import useAuthentication from '@hooks/useAuthentication'
 
 import { isSSR } from '@utils/helpers'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+})
 
 /**
  * AppProvider
