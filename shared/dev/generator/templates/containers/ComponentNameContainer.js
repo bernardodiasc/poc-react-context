@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import use<%= componentName %>Context from './use<%= componentName %>Context'
 

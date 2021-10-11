@@ -1,7 +1,6 @@
 import * as React from 'react'
 
 import SiteMetadata from '@components/SiteMetadata'
-import LoadingLayout from '@components/LoadingLayout'
 
 const PageLayout = ({ title = 'X-Team', children }) => {
   return (

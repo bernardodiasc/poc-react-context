@@ -4,7 +4,7 @@ import SiteMetadata from '@components/SiteMetadata'
 import LoadingLayout from '@components/LoadingLayout'
 import Navigation from '@components/Navigation'
 
-import styles from './AppLayout.module.css'
+import * as styles from './AppLayout.module.css'
 
 const AppLayout = ({ isLoading, isDebugging, children }) => {
   return isLoading ? (
@@ -15,7 +15,7 @@ const AppLayout = ({ isLoading, isDebugging, children }) => {
   ) : (
     <main>
       {isDebugging && (
-        <div className={styles.debugPanel}>
+        <div className={undefined}>
           <Navigation />
         </div>
       )}

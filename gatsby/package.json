@@ -14,20 +14,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
-  "dependencies": {
-    "axios": "^0.21.4",
-    "gatsby": "next",
-    "gatsby-plugin-image": "next",
-    "gatsby-plugin-postcss": "next",
-    "gatsby-plugin-react-helmet": "next",
-    "gatsby-plugin-sitemap": "next",
-    "postcss": "^8.3.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }

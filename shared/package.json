@@ -6,29 +6,8 @@
   "author": "Bernardo Dias",
   "scripts": {
     "gen": "node dev/generator/generator.js",
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook"
-  },
-  "dependencies": {
-    "@svgr/webpack": "^5.5.0",
-    "axios": "^0.21.4",
-    "gatsby": "next",
-    "markdown-to-jsx": "^7.1.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-query": "^3.25.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@storybook/addon-actions": "^6.3.10",
-    "@storybook/addon-docs": "^6.3.10",
-    "@storybook/addon-essentials": "^6.3.10",
-    "@storybook/addon-links": "^6.3.10",
-    "@storybook/react": "^6.3.10",
-    "babel-loader": "^8.2.2",
-    "ejs": "^3.1.6",
-    "inquirer": "^8.1.5",
-    "yaml-loader": "^0.6.0"
+    "dev": "start-storybook -p 6006 -s public",
+    "docs": "start-storybook -p 6006 -s public --docs --no-manager-cache",
+    "build": "build-storybook -s public"
   }
 }
