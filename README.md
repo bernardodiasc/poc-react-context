@@ -2,22 +2,20 @@
 
 1. Make sure to have your API running at http://localhost:1337
 2. `git clone git@github.com:bernardodiasc/poc-react-context.git`
-3. `yarn install`
+3. Go to the project's new directory and run `yarn install`
 
 ### Gatsby
 
-1. Go to `gatsby` directory
-2. Run `yarn dev`
-3. Open http://localhost:8000/
+1. Run `yarn gatsby:dev`
+2. Open http://localhost:8000/
 
-### NextJS
+### Storybook
 
-1. Go to `nextjs` directory
-2. Run `yarn dev`
-3. Open http://localhost:3000/
- 
-### Shared (for dev)
+1. Run `yarn storybook:dev`
+2. Open http://localhost:6006/
 
-1. Go to `shared` directory
-2. Run `yarn dev`
-3. Open http://localhost:6006/
+### Generator
+
+1. Run `yarn generator`
+2. Pick your new component type and its name
+3. Check out new files created
