@@ -2,7 +2,7 @@
 
 1. Make sure to have your API running at http://localhost:1337
 2. `git clone git@github.com:bernardodiasc/poc-react-context.git`
-3. `yarn install`
+3. In the project's directory, run `yarn install`
 
 ### Gatsby
 
