@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { QueryClient, QueryClientProvider } from 'react-query'
+import axios from 'axios'
+import { SWRConfig } from 'swr'
 
 import AppContext from './AppContext'
 
@@ -7,14 +8,6 @@ import useIsAppMounted from '@hooks/useIsAppMounted'
 import useAuthentication from '@hooks/useAuthentication'
 
 import { isSSR } from '@utils/helpers'
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: false,
-    },
-  },
-})
 
 /**
  * AppProvider
@@ -31,24 +24,25 @@ const AppProvider = ({ children, pageContext }) => {
   const { logged } = useAuthentication()
 
   return (
-    <AppContext.Provider
+    <SWRConfig
       value={{
-        isAppMounted,
-        isSSR,
-        isAppLoading: isSSR || !isAppMounted,
-        pageContext,
-        logged,
+        fetcher: (resource, init) => axios.get(resource, init).then(res => res.data),
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
       }}
     >
-      {children}
-    </AppContext.Provider>
+      <AppContext.Provider
+        value={{
+          isAppMounted,
+          isSSR,
+          pageContext,
+          logged,
+        }}
+      >
+        {children}
+      </AppContext.Provider>
+    </SWRConfig>
   )
 }
 
-const AppProviderWrapper = (props) => (
-  <QueryClientProvider client={queryClient}>
-    <AppProvider {...props} />
-  </QueryClientProvider>
-)
-
-export default AppProviderWrapper
+export default AppProvider

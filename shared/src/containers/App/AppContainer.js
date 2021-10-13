@@ -16,7 +16,7 @@ import AppLayout from '@components/AppLayout'
  */
  const AppContainer = ({ element, props }) => {
   const { isAppMounted, isSSR } = useAppContext()
-  const { data: features } = useFeatureFlags()
+  const { features } = useFeatureFlags()
 
   const requiredData = Boolean(features)
   const isAppReady = (isAppMounted && requiredData) || isSSR
@@ -35,7 +35,7 @@ import AppLayout from '@components/AppLayout'
       isLoading={!isAppReady}
       isDebugging={isDebugging}
     >
-       {element}
+      {element}
     </AppLayout>
   )
 }

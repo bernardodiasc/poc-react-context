@@ -1,25 +1,23 @@
-import { useEffect, useState } from 'react'
-import { useQuery } from 'react-query'
+import { useEffect, useCallback } from 'react'
+import useSWR from 'swr'
 
 import useAppContext from '@contexts/App'
 
 function useFeatureFlags () {
+  const { data, error } = useSWR('http://localhost:1337/feature-flags')
+
+  const getEnabledFeatures = useCallback(
+    data => data?.reduce(
+      (acc, cur) => cur.enabled ? { ...acc, [cur.flag]: true } : acc, {}
+    ),
+    [data]
+  )
+
   return {
-    data: {
-      DEBUG_TOOLS: true
-    }
+    features: getEnabledFeatures(data),
+    isLoading: !error && !data,
+    isError: error
   }
-  // return useQuery(
-  //   'feature-flags',
-  //   async () => {
-  //     try {
-  //       const result = await fetch('http://localhost:1337/feature-flags')
-  //       return result.json()
-  //     } catch (error) {
-  //       throw new Error(error)
-  //     }
-  //   }
-  // )
 }
 
 export default useFeatureFlags
