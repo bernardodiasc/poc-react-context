@@ -8,9 +8,18 @@
     "nextjs"
   ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "../node_modules/next/dist/bin/next dev",
+    "build": "../node_modules/next/dist/bin/next build",
+    "start": "../node_modules/next/dist/bin/next start",
+    "lint": "../node_modules/next/dist/bin/next lint"
+  },
+  "dependencies": {
+    "next": "11.1.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
   }
 }

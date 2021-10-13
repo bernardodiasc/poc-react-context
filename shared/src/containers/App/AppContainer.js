@@ -14,7 +14,7 @@ import AppLayout from '@components/AppLayout'
  *
  * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
- const AppContainer = ({ element, props }) => {
+ const AppContainer = ({ children, props }) => {
   const { isAppMounted, isSSR } = useAppContext()
   const { features } = useFeatureFlags()
 
@@ -35,7 +35,7 @@ import AppLayout from '@components/AppLayout'
       isLoading={!isAppReady}
       isDebugging={isDebugging}
     >
-      {element}
+      {children}
     </AppLayout>
   )
 }

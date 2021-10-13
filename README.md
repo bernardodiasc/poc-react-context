@@ -16,8 +16,14 @@
 2. Run `yarn dev`
 3. Open http://localhost:3000/
  
-### Shared (for dev)
+### Shared
 
 1. Go to `shared` directory
 2. Run `yarn dev`
 3. Open http://localhost:6006/
+
+#### Generator
+
+1. In the `shared` directory
+2. Run `yarn gen`
+3. Chose the component type and name

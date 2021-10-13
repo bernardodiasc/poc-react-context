@@ -11,6 +11,8 @@ import AppContainer from '@containers/App'
 
 export const wrapPageElement = ({ element, props }) => (
   <AppProvider pageContext={props.pageContext}>
-    <AppContainer element={element} />
+    <AppContainer>
+      {element}
+    </AppContainer>
   </AppProvider>
 )
