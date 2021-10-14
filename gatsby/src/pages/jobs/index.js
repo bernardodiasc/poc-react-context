@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const JobsPage = () => <PageLayout title="Jobs Dashboard page" />
+const JobsPage = () => <PageContainer title="Jobs Dashboard page" />
 
 export default JobsPage

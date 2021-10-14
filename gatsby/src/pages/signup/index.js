@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const SignupPage = () => <PageLayout title="Signup page" />
+const SignupPage = () => <PageContainer title="Signup page" />
 
 export default SignupPage

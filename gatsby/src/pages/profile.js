@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const ProfilePage = () => <PageLayout title="Profile page" />
+const ProfilePage = () => <PageContainer title="Profile page" />
 
 export default ProfilePage

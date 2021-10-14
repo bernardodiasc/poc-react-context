@@ -1,14 +1,14 @@
 import * as React from 'react'
 
 import SiteMetadata from '@components/SiteMetadata'
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
 const DashboardPage = () => {
   return (
-    <PageLayout>
+    <PageContainer>
       <SiteMetadata title="Dashboard page" />
       Dashboard Page
-    </PageLayout>
+    </PageContainer>
   )
 }
 

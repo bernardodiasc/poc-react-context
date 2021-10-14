@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const SettingsPage = () => <PageLayout title="Settings page" />
+const SettingsPage = () => <PageContainer title="Settings page" />
 
 export default SettingsPage

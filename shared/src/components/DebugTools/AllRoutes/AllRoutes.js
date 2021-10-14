@@ -5,18 +5,16 @@ import LinkRow from '../LinkRow'
 
 import * as styles from './AllRoutes.module.css'
 
-import links from '@dev/fixtures/routes-and-screens.json'
-
-const AllRoutes = ({ children, AppLink }) => {
+const AllRoutes = ({ AppLink, screens }) => {
   return (
     <Panel title="All Routes">
-      {links.map(link => (
+      {screens.map(screen => (
         <LinkRow
           AppLink={AppLink}
-          to={link.to}
-          screenshot={link.screenshot}
-          state={link.state}
-          key={`${link.to}-${link.screenshot}`}
+          to={screen.to}
+          screenshot={screen.screenshot}
+          state={screen.state}
+          key={screen.screenshot}
         />
       ))}
     </Panel>

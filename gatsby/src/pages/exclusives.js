@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const ExclusivesPage = () => <PageLayout title="Exclusives page" />
+const ExclusivesPage = () => <PageContainer title="Exclusives page" />
 
 export default ExclusivesPage

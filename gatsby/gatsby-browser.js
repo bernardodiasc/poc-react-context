@@ -12,7 +12,7 @@ import AppContainer from '@containers/App'
 
 export const wrapPageElement = ({ element, props }) => (
   <AppProvider
-    pageContext={props.pageContext}
+    pageProps={props}
     AppLink={Link}
     envVars={{
       DOMAIN_URL: process.env.GATSBY_DOMAIN_URL

@@ -3,13 +3,11 @@ import * as React from 'react'
 import SiteMetadata from '@components/SiteMetadata'
 import ScreenshotPage from '@components/ScreenshotPage'
 import useAppContext from '@contexts/App'
+import useRoutesAndScreens from '@hooks/useRoutesAndScreens'
 
-import links from '@dev/fixtures/routes-and-screens.json'
-
-const PageContainer = ({ title, location }) => {
-  const { envVars } = useAppContext()
-  const { DOMAIN_URL } = envVars
-  const screen = links.find(link => link.to === location.pathname) || {}
+const PageContainer = ({ title }) => {
+  const { envVars: { DOMAIN_URL } } = useAppContext()
+  const { screen } = useRoutesAndScreens()
   return (
     <>
       <SiteMetadata title={title} />

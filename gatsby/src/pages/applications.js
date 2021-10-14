@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const ApplicationsPage = () => <PageLayout title="Applications page" />
+const ApplicationsPage = () => <PageContainer title="Applications page" />
 
 export default ApplicationsPage

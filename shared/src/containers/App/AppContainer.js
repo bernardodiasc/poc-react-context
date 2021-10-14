@@ -3,6 +3,7 @@ import * as React from 'react'
 import useAppContext from '@contexts/App'
 import useFeatureFlags from '@hooks/useFeatureFlags'
 import AppLayout from '@components/AppLayout'
+import DebugToolsContainer from '@containers/DebugTools'
 
 /**
  * AppContainer
@@ -14,12 +15,11 @@ import AppLayout from '@components/AppLayout'
  * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
  const AppContainer = ({ children, props }) => {
-  const { isAppMounted, isSSR, AppLink, envVars } = useAppContext()
+  const { isAppMounted, isSSR } = useAppContext()
   const { features } = useFeatureFlags()
 
   const requiredData = Boolean(features)
   const isAppReady = (isAppMounted && requiredData) || isSSR
-  const isDebugging = features?.DEBUG_TOOLS
 
   // EFFECTS
   // - Redirect rules happens here during App Loading stage.
@@ -32,8 +32,7 @@ import AppLayout from '@components/AppLayout'
     <AppLayout
       key={isAppMounted}
       isLoading={!isAppReady}
-      isDebugging={isDebugging} // TO DO: Pass DebugToolsContainer as DebugTools props instead, and move all related logic to there
-      AppLink={AppLink}
+      DebugTools={DebugToolsContainer}
     >
       {children}
     </AppLayout>

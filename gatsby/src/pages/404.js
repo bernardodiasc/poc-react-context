@@ -1,11 +1,11 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
 const NotFoundPage = () => (
-  <PageLayout title="Not Found page">
+  <PageContainer title="Not Found page">
     Not Found Page
-  </PageLayout>
+  </PageContainer>
 )
 
 export default NotFoundPage
