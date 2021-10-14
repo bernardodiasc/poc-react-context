@@ -3,12 +3,12 @@ import * as React from 'react'
 import DebugTools from '@components/DebugTools'
 import useAppContext from '@contexts/App'
 import useFeatureFlags from '@hooks/useFeatureFlags'
-import useRoutesAndScreens from '@hooks/useRoutesAndScreens'
+import useRoutesAndScreensFixture from '@hooks/useRoutesAndScreensFixture'
 
 const DebugToolsContainer = () => {
   const { AppLink } = useAppContext()
   const { features } = useFeatureFlags()
-  const { screens, screen } = useRoutesAndScreens()
+  const { screens, screen } = useRoutesAndScreensFixture()
 
   const isDebugging = features?.DEBUG_TOOLS
   return isDebugging ? (

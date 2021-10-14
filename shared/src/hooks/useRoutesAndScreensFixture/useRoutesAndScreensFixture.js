@@ -2,7 +2,7 @@ import useAppContext from '@contexts/App'
 
 import screens from '@dev/fixtures/routes-and-screens.json'
 
-function useRoutesAndScreens () {
+function useRoutesAndScreensFixture () {
   const { pageProps: { location: { pathname } } } = useAppContext()
   return {
     screens,
@@ -10,4 +10,4 @@ function useRoutesAndScreens () {
   }
 }
 
-export default useRoutesAndScreens
+export default useRoutesAndScreensFixture
