@@ -1,13 +1,13 @@
-# Navigation Component
+# DebugTools Component
 
 ## How to use
 
 ```
-import Navigation from '@components/Navigation'
+import DebugTools from '@components/DebugTools'
 ```
 
 ```
-<Navigation />
+<DebugTools />
 ```
 
 ## Properties

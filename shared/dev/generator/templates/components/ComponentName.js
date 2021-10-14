@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-import './<%= componentName %>.css'
+import * as styles from './<%= componentName %>.module.css'
 
 const <%= componentName %> = ({ children }) => {
   return (
-    <div className="<%= componentClass %>">
+    <div className={styles.component}>
       {children}
     </div>
   )

@@ -1,0 +1,11 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+
+import <%= componentName %> from './<%= componentPath %>'
+
+<Meta title="<%= componentType %>/<%= componentName %>" component={<%= componentName %>} />
+
+<Canvas>
+  <Story name="no props">
+    <<%= componentName %> />
+  </Story>
+</Canvas>

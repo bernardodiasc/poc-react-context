@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
 
-import NavigationLink from './NavigationLink.js'
+import LabelRow from './LabelRow.js'
 
 it('renders without crashing', () => {
-  const component = shallow(<NavigationLink />)
+  const component = shallow(<LabelRow />)
   expect(component).toMatchSnapshot()
 })

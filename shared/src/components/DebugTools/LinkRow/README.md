@@ -1,13 +1,13 @@
-# NavigationLink Component
+# LinkRow Component
 
 ## How to use
 
 ```
-import NavigationLink from '@components/Navigation/NavigationLink'
+import LinkRow from '@components/DebugTools/LinkRow'
 ```
 
 ```
-<NavigationLink />
+<LinkRow />
 ```
 
 ## Properties

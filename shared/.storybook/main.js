@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-docs',
     '@storybook/addon-essentials',
     '@storybook/addon-postcss',
+    'storybook-css-modules-preset',
   ],
   webpackFinal: async (config) => {
     config.resolve.alias = {
@@ -19,18 +20,6 @@ module.exports = {
       '@hooks': path.resolve(__dirname, '../src/hooks'),
       '@utils': path.resolve(__dirname, '../src/utils'),
     }
-
-    config.module.rules.push({
-      test: /\.ya?ml$/,
-      type: 'json', // Required by Webpack v4
-      use: 'yaml-loader',
-    })
-
-    config.module.rules.push({
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader?modules=true'],
-      include: path.resolve(__dirname, '../components'),
-    })
 
     return config
   }

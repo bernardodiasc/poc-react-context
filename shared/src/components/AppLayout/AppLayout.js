@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import SiteMetadata from '@components/SiteMetadata'
 import LoadingLayout from '@components/LoadingLayout'
-import Navigation from '@components/Navigation'
+import DebugTools from '@components/DebugTools'
 
 import * as styles from './AppLayout.module.css'
 
@@ -14,11 +14,7 @@ const AppLayout = ({ isLoading, isDebugging, children }) => {
     </main>
   ) : (
     <main>
-      {isDebugging && (
-        <div className={undefined}>
-          <Navigation />
-        </div>
-      )}
+      {isDebugging && <DebugTools />}
       {children}
     </main>
   )
