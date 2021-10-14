@@ -2,22 +2,18 @@ import * as React from 'react'
 
 import * as styles from './LinkRow.module.css'
 
-const LinkRow = ({ children, to, state }) => {
+const LinkRow = ({ to, screenshot, state, AppLink }) => {
+  const Link = AppLink
+    ? AppLink
+    : () => <a href={to} className={styles.link}>{to}</a>
   return (
     <div className={styles.component}>
-      {children}
+      <Link to={to} activeStyle={styles.active} className={styles.link} />
+      {state && (
+        <div className={styles.state}><strong>State:</strong> {state}</div>
+      )}
     </div>
   )
 }
-
-//   <Link
-//     to={to}
-//     activeStyle={styles.active}
-//     // partiallyActive={true}
-//     state={state}
-//   >
-//     {children}
-//   </Link>
-// )
 
 export default LinkRow

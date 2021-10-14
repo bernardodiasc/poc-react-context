@@ -8,3 +8,11 @@
   background: #dfdfdf;
   border-bottom: #c0c0c0;
 }
+
+.component:hover {
+  background: #efefef;
+}
+
+.label {
+  margin-right: 10px;
+}

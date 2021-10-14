@@ -1,8 +1,4 @@
-.DebugTools {
-  background: white;
-  border: 1px dashed;
-  width: 200px;
-  height: calc(100vh - 50px);
-  overflow: auto;
-  opacity: 0.9;
+.component {
+  height: 100vh;
+  overflow-y: hidden;
 }

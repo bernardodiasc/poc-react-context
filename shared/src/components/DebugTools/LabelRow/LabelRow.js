@@ -5,7 +5,7 @@ import * as styles from './LabelRow.module.css'
 const LabelRow = ({ label, children }) => {
   return (
     <label className={styles.component}>
-      <span>{label}</span>
+      <span className={styles.label}>{label}</span>
       {children}
     </label>
   )
