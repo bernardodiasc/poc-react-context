@@ -1,23 +1,15 @@
-import * as React from 'react'
+import React from 'react'
 
 import DebugTools from '@components/DebugTools'
 import useAppContext from '@contexts/App'
-import useFeatureFlags from '@hooks/useFeatureFlags'
-import useRoutesAndScreensFixture from '@hooks/useRoutesAndScreensFixture'
+import useDebugToolsContext from '@contexts/DebugTools'
 
 const DebugToolsContainer = () => {
-  const { AppLink } = useAppContext()
-  const { features } = useFeatureFlags()
-  const { screens, screen } = useRoutesAndScreensFixture()
-
-  const isDebugging = features?.DEBUG_TOOLS
-  return isDebugging ? (
-    <DebugTools
-      AppLink={AppLink}
-      screens={screens}
-      screen={screen}
-    />
-  ) : null
+  const appContext = useAppContext()
+  const debugToolsContext = useDebugToolsContext()
+  return (
+    <DebugTools {...appContext} {...debugToolsContext} />
+  )
 }
 
 export default DebugToolsContainer

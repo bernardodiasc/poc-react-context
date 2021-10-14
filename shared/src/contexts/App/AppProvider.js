@@ -4,6 +4,7 @@ import { SWRConfig } from 'swr'
 
 import AppContext from './AppContext'
 
+import { DebugToolsProvider } from '@contexts/DebugTools'
 import useIsAppMounted from '@hooks/useIsAppMounted'
 import useAuthentication from '@hooks/useAuthentication'
 
@@ -42,7 +43,9 @@ const AppProvider = ({ children, pageProps, AppLink, AppImg, envVars }) => {
           envVars,
         }}
       >
-        {children}
+        <DebugToolsProvider>
+          {children}
+        </DebugToolsProvider>
       </AppContext.Provider>
     </SWRConfig>
   )

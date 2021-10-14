@@ -4,19 +4,17 @@ import * as styles from './ScreenshotPage.module.css'
 
 const ScreenshotPage = ({
   screen,
-  DOMAIN_URL,
+  imgSrc,
   AppImg
 }) => {
-  const ImgSrc = `${DOMAIN_URL}screenshots/desktop/${screen.screenshot}`
-
   const Img = AppImg
     ? AppImg
-    : () => <img src={ImgSrc} />
+    : () => <img src={imgSrc} className={styles.img} />
 
   return (
     <article className={styles.component}>
-      {ImgSrc && (
-        <Img src={ImgSrc} />
+      {imgSrc && (
+        <Img src={imgSrc} className={styles.img} />
       )}
     </article>
   )
