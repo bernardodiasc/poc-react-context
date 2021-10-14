@@ -15,7 +15,7 @@ const RouteDetails = ({ screen }) => {
           <p><strong>SEO:</strong> This screen requires dynamic data that changes frequently, along with this the sitemap preferences must be managed accondingly.</p>
           <p><strong>SEO Metadata:</strong></p>
           <ul>
-            <li><strong>Title:</strong>Job Board - X-Team</li>
+            <li><strong>Title:</strong> Job Board - X-Team</li>
           </ul>
         </div>
       )}

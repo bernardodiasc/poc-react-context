@@ -6,7 +6,7 @@ import useAppContext from '@contexts/App'
 import useRoutesAndScreensFixture from '@hooks/useRoutesAndScreensFixture'
 
 const PageContainer = ({ title }) => {
-  const { envVars: { DOMAIN_URL } } = useAppContext()
+  const { envVars: { DOMAIN_URL }, Img } = useAppContext()
   const { screen } = useRoutesAndScreensFixture()
   return (
     <>
@@ -14,6 +14,7 @@ const PageContainer = ({ title }) => {
       <ScreenshotPage
         screen={screen}
         DOMAIN_URL={DOMAIN_URL}
+        AppImg={Img}
       />
     </>
   )

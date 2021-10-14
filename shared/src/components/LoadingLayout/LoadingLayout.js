@@ -1,12 +1,10 @@
 import * as React from 'react'
 
-const styles = {
-  padding: 96,
-}
+import * as styles from './LoadingLayout.module.css'
 
 const LoadingLayout = () => {
   return (
-    <div style={styles}>
+    <div className={styles.component}>
       Loading...
     </div>
   )
