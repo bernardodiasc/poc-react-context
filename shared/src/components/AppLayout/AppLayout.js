@@ -6,7 +6,7 @@ import DebugTools from '@components/DebugTools'
 
 import * as styles from './AppLayout.module.css'
 
-const AppLayout = ({ isLoading, isDebugging, children }) => {
+const AppLayout = ({ isLoading, isDebugging, children, AppLink }) => {
   return isLoading ? (
     <main>
       <SiteMetadata title="Loading App..." />
@@ -14,7 +14,7 @@ const AppLayout = ({ isLoading, isDebugging, children }) => {
     </main>
   ) : (
     <main>
-      {isDebugging && <DebugTools />}
+      {isDebugging && <DebugTools AppLink={AppLink} />}
       {children}
     </main>
   )

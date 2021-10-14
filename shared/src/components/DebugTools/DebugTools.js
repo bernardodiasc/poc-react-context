@@ -6,12 +6,12 @@ import ScreenConfig from './ScreenConfig'
 
 import * as styles from './DebugTools.module.css'
 
-const DebugTools = () => {
+const DebugTools = ({ AppLink }) => {
   return (
     <aside className={styles.component}>
       <ScreenConfig />
       <RouteDetails />
-      <AllRoutes />
+      <AllRoutes AppLink={AppLink} />
     </aside>
   )
 }

@@ -4,15 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
- import * as React from 'react'
-
- import { AppProvider } from '@contexts/App'
- import AppContainer from '@containers/App'
-
- export const wrapPageElement = ({ element, props }) => (
-   <AppProvider pageContext={props.pageContext}>
-     <AppContainer>
-       {element}
-     </AppContainer>
-   </AppProvider>
- )
+export { wrapPageElement } from './gatsby-browser'

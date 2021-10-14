@@ -8,7 +8,7 @@ const LinkRow = ({ to, screenshot, state, AppLink }) => {
     : () => <a href={to} className={styles.link}>{to}</a>
   return (
     <div className={styles.component}>
-      <Link to={to} activeStyle={styles.active} className={styles.link} />
+      <Link to={to} activeClassName={styles.active} className={styles.link}>{to}</Link>
       {state && (
         <div className={styles.state}><strong>State:</strong> {state}</div>
       )}

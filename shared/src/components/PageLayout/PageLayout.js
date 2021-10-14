@@ -2,7 +2,8 @@ import * as React from 'react'
 
 import SiteMetadata from '@components/SiteMetadata'
 
-const PageLayout = ({ title = 'X-Team', children }) => {
+const PageLayout = ({ title = 'X-Team', children, pageContext }) => {
+  console.log({pageContext})
   return (
     <article>
       <SiteMetadata title={title} />

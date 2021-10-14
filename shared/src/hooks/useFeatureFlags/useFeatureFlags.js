@@ -1,8 +1,6 @@
 import { useEffect, useCallback } from 'react'
 import useSWR from 'swr'
 
-import useAppContext from '@contexts/App'
-
 function useFeatureFlags () {
   const { data, error } = useSWR('http://localhost:1337/feature-flags')
 

@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import useAppContext from '@contexts/App'
 import useFeatureFlags from '@hooks/useFeatureFlags'
-
 import AppLayout from '@components/AppLayout'
 
 /**
@@ -15,7 +14,7 @@ import AppLayout from '@components/AppLayout'
  * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
  const AppContainer = ({ children, props }) => {
-  const { isAppMounted, isSSR } = useAppContext()
+  const { isAppMounted, isSSR, AppLink } = useAppContext()
   const { features } = useFeatureFlags()
 
   const requiredData = Boolean(features)
@@ -34,6 +33,7 @@ import AppLayout from '@components/AppLayout'
       key={isAppMounted}
       isLoading={!isAppReady}
       isDebugging={isDebugging}
+      AppLink={AppLink}
     >
       {children}
     </AppLayout>
