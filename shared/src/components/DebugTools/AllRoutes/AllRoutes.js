@@ -14,7 +14,7 @@ const AllRoutes = ({ AppLink, screens }) => {
           to={screen.to}
           screenshot={screen.screenshot}
           state={screen.state}
-          key={screen.screenshot}
+          key={screen.desktop}
         />
       ))}
     </Panel>

@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import * as styles from './LinkRow.module.css'
 
-const LinkRow = ({ to, screenshot, state, AppLink }) => {
+const LinkRow = ({ to, state, AppLink }) => {
   const Link = AppLink
     ? AppLink
     : () => <a href={to} className={styles.link}>{to}</a>
