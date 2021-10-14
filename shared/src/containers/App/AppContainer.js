@@ -14,7 +14,7 @@ import AppLayout from '@components/AppLayout'
  * https://v4.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting
  */
  const AppContainer = ({ children, props }) => {
-  const { isAppMounted, isSSR, AppLink } = useAppContext()
+  const { isAppMounted, isSSR, AppLink, envVars } = useAppContext()
   const { features } = useFeatureFlags()
 
   const requiredData = Boolean(features)
@@ -32,7 +32,7 @@ import AppLayout from '@components/AppLayout'
     <AppLayout
       key={isAppMounted}
       isLoading={!isAppReady}
-      isDebugging={isDebugging}
+      isDebugging={isDebugging} // TO DO: Pass DebugToolsContainer as DebugTools props instead, and move all related logic to there
       AppLink={AppLink}
     >
       {children}

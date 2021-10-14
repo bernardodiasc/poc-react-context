@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import PageLayout from '@components/PageLayout'
+import PageContainer from '@containers/Page'
 
-const IndexPage = props => <PageLayout title="Index page" {...props} />
+const IndexPage = props => <PageContainer title="Index page" {...props} />
 
 export default IndexPage

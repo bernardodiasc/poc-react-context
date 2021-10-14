@@ -1,0 +1,117 @@
+[
+  {
+    "to": "/",
+    "screenshot": "Login-1.png",
+    "state": "(guest)"
+  },
+  {
+    "to": "/",
+    "screenshot": "HomePage-Pre-ExclusivesLaunch.png",
+    "state": "(authenticated)"
+  },
+  {
+    "to": "/",
+    "screenshot": "HomePage-Pre-ExclusivesLaunch(1).png",
+    "state": "(applied for a job)"
+  },
+  {
+    "to": "/404",
+    "screenshot": "",
+    "state": ""
+  },
+  {
+    "to": "/signup",
+    "screenshot": "Signup-1.png",
+    "state": ""
+  },
+  {
+    "to": "/profile",
+    "screenshot": "Profile-3.png",
+    "state": "(my profile)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-2.png",
+    "state": "(overview)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-3.png",
+    "state": "(header)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-4.png",
+    "state": "(top skills)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-5.png",
+    "state": "(introduction)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-6.png",
+    "state": "(experiences)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-7.png",
+    "state": "(xp title)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-8.png",
+    "state": "(xp date)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-9.png",
+    "state": "(xp skills)"
+  },
+  {
+    "to": "/profile",
+    "screenshot": "ProfileEditor-10.png",
+    "state": "(xp highlights)"
+  },
+  {
+    "to": "/settings",
+    "screenshot": "Settings-1.png",
+    "state": "(saved)"
+  },
+  {
+    "to": "/settings",
+    "screenshot": "Settings-2.png",
+    "state": "(email)"
+  },
+  {
+    "to": "/settings",
+    "screenshot": "Settings-3.png",
+    "state": "(password)"
+  },
+  {
+    "to": "/settings",
+    "screenshot": "Settings-4.png",
+    "state": "(notifications)"
+  },
+  {
+    "to": "/settings",
+    "screenshot": "Settings-5.png",
+    "state": "(rate)"
+  },
+  {
+    "to": "/settings",
+    "screenshot": "Settings-6.png",
+    "state": "(roles)"
+  },
+  {
+    "to": "/exclusives",
+    "screenshot": "Exclusives-23.png",
+    "state": ""
+  },
+  {
+    "to": "/applications",
+    "screenshot": "Applications-InReview.png",
+    "state": ""
+  }
+]

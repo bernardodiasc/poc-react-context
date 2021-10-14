@@ -1,3 +1,4 @@
-import useFeatureFlags from './useFeatureFlags'
+import useFeatureFlags, { getFeatureFlags } from './useFeatureFlags'
 
 export default useFeatureFlags
+export { getFeatureFlags }
