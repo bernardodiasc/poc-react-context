@@ -7,7 +7,14 @@ function useRoutesAndScreensFixture () {
   const pathname = isSSR ? '' : window.location.pathname
   return {
     screens,
-    screen: screens.find(link => link.to === pathname) || {}
+    screen: screens.find(link => link.to === pathname) || {},
+    routes: screens.reduce((acc, cur) => ({
+      ...acc,
+      [cur.to]: [
+        ...(acc[cur.to] || []),
+        cur
+      ]
+    }), {}),
   }
 }
 

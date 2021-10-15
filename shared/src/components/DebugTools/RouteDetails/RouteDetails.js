@@ -10,12 +10,12 @@ const RouteDetails = ({ screen }) => {
       {screen && (
         <div className={styles.component}>
           <h3>Route: <code>{screen.to}</code></h3>
-          <p><strong>Description:</strong> Jobs Board is public access.</p>
-          <p><strong>Redirect conditions:</strong> Only affected by redirectUrl param.</p>
-          <p><strong>SEO:</strong> This screen requires dynamic data that changes frequently, along with this the sitemap preferences must be managed accondingly.</p>
+          <p><strong>Description:</strong> _</p>
+          <p><strong>Redirect conditions:</strong> _</p>
+          <p><strong>SEO:</strong> _</p>
           <p><strong>SEO Metadata:</strong></p>
           <ul>
-            <li><strong>Title:</strong> Job Board - X-Team</li>
+            <li><strong>Title:</strong> _</li>
           </ul>
         </div>
       )}

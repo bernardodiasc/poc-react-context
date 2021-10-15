@@ -3,11 +3,11 @@ import * as React from 'react'
 import Panel from '../Panel'
 import LinkRow from '../LinkRow'
 
-import * as styles from './AllRoutes.module.css'
+import * as styles from './AllRoutesAndScreens.module.css'
 
-const AllRoutes = ({ AppLink, routes }) => {
+const AllRoutesAndScreens = ({ AppLink, routes }) => {
   return (
-    <Panel title="All Routes">
+    <Panel title="All Routes and Screens">
       {Object.keys(routes).map(key => (
         <LinkRow
           AppLink={AppLink}
@@ -19,4 +19,4 @@ const AllRoutes = ({ AppLink, routes }) => {
   )
 }
 
-export default AllRoutes
+export default AllRoutesAndScreens

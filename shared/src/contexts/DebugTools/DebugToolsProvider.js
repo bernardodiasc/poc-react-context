@@ -7,10 +7,13 @@ import useRoutesAndScreensFixture from '@hooks/useRoutesAndScreensFixture'
 
 const DebugToolsProvider = ({ children, ...props }) => {
   const { features } = useFeatureFlags()
-  const { screens, screen } = useRoutesAndScreensFixture()
-  const [isMobile, setIsMobile] = useState()
+  const { screens, screen, routes } = useRoutesAndScreensFixture()
+  const [isMobile, setIsMobile] = useState(false)
+  const [screenState, setScreenState] = useState({})
+
   const toggleMobile = () => setIsMobile(!isMobile)
   const isDebugging = features?.DEBUG_TOOLS
+
   return (
     <DebugToolsContext.Provider
       value={{
@@ -18,8 +21,11 @@ const DebugToolsProvider = ({ children, ...props }) => {
         isDebugging,
         screens,
         screen,
+        routes,
         isMobile,
-        toggleMobile
+        toggleMobile,
+        screenState,
+        setScreenState,
       }}
     >
       {children}
