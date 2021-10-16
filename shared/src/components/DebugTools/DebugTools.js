@@ -24,6 +24,7 @@ const DebugTools = ({
         AppLink={AppLink}
         navigate={navigate}
         routes={routes}
+        screen={screen}
         setScreen={setScreen}
       />
     </aside>

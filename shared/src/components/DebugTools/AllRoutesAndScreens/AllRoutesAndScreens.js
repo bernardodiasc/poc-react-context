@@ -6,7 +6,7 @@ import ScreenLinksList from '../ScreenLinksList'
 
 import * as styles from './AllRoutesAndScreens.module.css'
 
-const AllRoutesAndScreens = ({ navigate, AppLink, routes, setScreen }) => {
+const AllRoutesAndScreens = ({ navigate, AppLink, routes, screen, setScreen }) => {
   return (
     <Panel title="All Routes and Screens">
       {Object.keys(routes).map(key => (
@@ -20,6 +20,7 @@ const AllRoutesAndScreens = ({ navigate, AppLink, routes, setScreen }) => {
             navigate={navigate}
             AppLink={AppLink}
             routes={routes}
+            screen={screen}
             setScreen={setScreen}
           />
         </Fragment>

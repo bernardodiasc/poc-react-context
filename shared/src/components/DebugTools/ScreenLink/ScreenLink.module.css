@@ -1,1 +1,15 @@
-.component {}
+.component {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 12px;
+
+}
+
+.component:hover {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+}

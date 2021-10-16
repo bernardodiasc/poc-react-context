@@ -12,7 +12,9 @@ function useRoutesAndScreensFixture () {
   const pathname = isSSR ? '' : window.location.pathname
 
   useEffect(() => {
-    setScreen(screens.find(screen => screen.to === pathname && screen.state === screenState) || {})
+    const screen = (screenState &&  screens.find(screen => screen.to === pathname && screen.state === screenState))
+      || screens.find(screen => screen.to === pathname)
+    setScreen(screen || {})
   }, [pathname, screenState])
 
   return {

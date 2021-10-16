@@ -4,7 +4,7 @@ import AppLinkFallback from '../AppLinkFallback'
 
 import * as styles from './ScreenLink.module.css'
 
-const ScreenLink = ({ navigate, AppLink, screen, setScreen }) => {
+const ScreenLink = ({ isActive, navigate, AppLink, screen, active, setScreen }) => {
   const handleOnClick = (e) => {
     e.preventDefault()
     setScreen(screen.state)
@@ -15,7 +15,10 @@ const ScreenLink = ({ navigate, AppLink, screen, setScreen }) => {
       // AppLink={AppLink}
       to={screen.to}
       onClick={handleOnClick}
-      className={styles.component}
+      className={[
+        styles.component,
+        isActive ? styles.active : '',
+      ].join(' ')}
     >
       {screen.state}
     </AppLinkFallback>

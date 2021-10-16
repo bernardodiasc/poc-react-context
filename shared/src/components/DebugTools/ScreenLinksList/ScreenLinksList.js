@@ -4,17 +4,24 @@ import ScreenLink from '../ScreenLink'
 
 import * as styles from './ScreenLinksList.module.css'
 
-const ScreenLinksList = ({ navigate, AppLink, route, routes, setScreen }) => {
+const ScreenLinksList = ({ navigate, AppLink, route, routes, screen: currentScreen, setScreen }) => {
   return Array.isArray(routes[route])
-    ? routes[route].filter(screen => Boolean(screen.state)).map(screen => (
-      <ScreenLink
-        navigate={navigate}
-        AppLink={AppLink}
-        screen={screen}
-        setScreen={setScreen}
-        key={`${route}-${screen.state}`}
-      />
-    )) : null
+    ? routes[route]
+      .filter(thisScreen => Boolean(thisScreen.state))
+      .map(thisScreen => {
+        const isActive = currentScreen.state === thisScreen.state
+        return (
+          <ScreenLink
+            isActive={isActive}
+            navigate={navigate}
+            AppLink={AppLink}
+            screen={thisScreen}
+            setScreen={setScreen}
+            key={`${route}-${thisScreen.state}`}
+          />
+        )
+      })
+    : null
 }
 
 export default ScreenLinksList
