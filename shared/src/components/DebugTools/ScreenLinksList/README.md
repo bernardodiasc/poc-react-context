@@ -1,13 +1,13 @@
-# LinkRow Component
+# ScreenLinksList Component
 
 ## How to use
 
 ```
-import LinkRow from '@components/DebugTools/LinkRow'
+import ScreenLinksList from '@components/DebugTools/ScreenLinksList'
 ```
 
 ```
-<LinkRow />
+<ScreenLinksList />
 ```
 
 ## Properties

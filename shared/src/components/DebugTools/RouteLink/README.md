@@ -1,13 +1,13 @@
-# AllRoutes Component
+# RouteLink Component
 
 ## How to use
 
 ```
-import AllRoutes from '@components/DebugTools/AllRoutes'
+import RouteLink from '@components/DebugTools/RouteLink'
 ```
 
 ```
-<AllRoutes />
+<RouteLink />
 ```
 
 ## Properties

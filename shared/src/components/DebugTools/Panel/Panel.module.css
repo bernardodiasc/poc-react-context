@@ -40,5 +40,5 @@
 /* TO DO: make it resizable */
 .content {
   overflow-y: auto;
-  max-height: 80vh;
+  max-height: 400px;
 }

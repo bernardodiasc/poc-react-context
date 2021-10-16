@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
 
-import LinkRow from './LinkRow.js'
+import ScreenLinksList from './ScreenLinksList.js'
 
 it('renders without crashing', () => {
-  const component = shallow(<LinkRow />)
+  const component = shallow(<ScreenLinksList />)
   expect(component).toMatchSnapshot()
 })

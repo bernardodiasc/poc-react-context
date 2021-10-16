@@ -6,6 +6,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 import { AppProvider } from '@contexts/App'
 import AppContainer from '@containers/App'
@@ -15,9 +16,11 @@ const AppLink = ({ to, ...props }) => (
 )
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
   return (
     <AppProvider
       pageProps={pageProps}
+      navigate={router.push}
       AppLink={AppLink}
       AppImg={Image}
       envVars={{

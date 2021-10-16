@@ -1,19 +1,28 @@
-import * as React from 'react'
+import React, { Fragment } from 'react'
 
 import Panel from '../Panel'
-import LinkRow from '../LinkRow'
+import RouteLink from '../RouteLink'
+import ScreenLinksList from '../ScreenLinksList'
 
 import * as styles from './AllRoutesAndScreens.module.css'
 
-const AllRoutesAndScreens = ({ AppLink, routes }) => {
+const AllRoutesAndScreens = ({ navigate, AppLink, routes, setScreen }) => {
   return (
     <Panel title="All Routes and Screens">
       {Object.keys(routes).map(key => (
-        <LinkRow
-          AppLink={AppLink}
-          to={key}
-          key={key}
-        />
+        <Fragment key={key}>
+          <RouteLink
+            AppLink={AppLink}
+            to={key}
+          />
+          <ScreenLinksList
+            route={key}
+            navigate={navigate}
+            AppLink={AppLink}
+            routes={routes}
+            setScreen={setScreen}
+          />
+        </Fragment>
       ))}
     </Panel>
   )

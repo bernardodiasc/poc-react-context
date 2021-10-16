@@ -5,7 +5,7 @@
  */
 
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 
 import { AppProvider } from '@contexts/App'
 import AppContainer from '@containers/App'
@@ -13,6 +13,7 @@ import AppContainer from '@containers/App'
 export const wrapPageElement = ({ element, props }) => (
   <AppProvider
     pageProps={props}
+    navigate={navigate}
     AppLink={Link}
     envVars={{
       DOMAIN_URL: process.env.GATSBY_DOMAIN_URL

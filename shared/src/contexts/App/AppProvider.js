@@ -18,7 +18,7 @@ import { isSSR } from '@utils/helpers'
  * It provides context data accessible anywhere in the app.
  * It has only one declared in the render tree during user session.
  */
-const AppProvider = ({ children, pageProps, AppLink, AppImg, envVars }) => {
+const AppProvider = ({ children, pageProps, navigate, AppLink, AppImg, envVars }) => {
   const { isAppMounted } = useIsAppMounted()
 
   // This is a fake authentication
@@ -38,6 +38,7 @@ const AppProvider = ({ children, pageProps, AppLink, AppImg, envVars }) => {
           isSSR,
           pageProps,
           logged,
+          navigate,
           AppLink,
           AppImg,
           envVars,

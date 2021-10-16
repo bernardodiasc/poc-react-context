@@ -1,19 +1,31 @@
 import * as React from 'react'
 
-import RouteDetails from './RouteDetails'
+import RoutesAndScreensDetails from './RoutesAndScreensDetails'
 import AllRoutesAndScreens from './AllRoutesAndScreens'
-import AllRoutes from './AllRoutes'
 import ScreenConfig from './ScreenConfig'
 
 import * as styles from './DebugTools.module.css'
 
-const DebugTools = ({ isDebugging, AppLink, screens, screen, routes, isMobile, toggleMobile }) => {
+const DebugTools = ({
+  isDebugging,
+  navigate,
+  AppLink,
+  screen,
+  routes,
+  isMobile,
+  toggleMobile,
+  setCurrentScreen,
+}) => {
   return isDebugging ? (
     <aside className={styles.component}>
       <ScreenConfig toggleMobile={toggleMobile} isMobile={isMobile} />
-      <RouteDetails screens={screens} screen={screen} />
-      <AllRoutesAndScreens AppLink={AppLink} routes={routes} />
-      <AllRoutes AppLink={AppLink} routes={routes} />
+      <RoutesAndScreensDetails screen={screen} />
+      <AllRoutesAndScreens
+        AppLink={AppLink}
+        navigate={navigate}
+        routes={routes}
+        setScreen={setCurrentScreen}
+      />
     </aside>
   ) : null
 }
