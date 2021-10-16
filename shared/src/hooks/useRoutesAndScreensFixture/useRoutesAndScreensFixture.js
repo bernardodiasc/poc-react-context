@@ -7,17 +7,13 @@ import screens from '@dev/fixtures/routes-and-screens.json'
 function useRoutesAndScreensFixture () {
   const { isSSR } = useAppContext()
   const [screen, setScreen] = useState({})
+  const [screenState, setScreenState] = useState('')
 
   const pathname = isSSR ? '' : window.location.pathname
 
-  const setCurrentScreen = (state) => {
-    const screen = screens.find(screen => screen.to === pathname && screen.state === state) || {}
-    setScreen(screen)
-  }
-
   useEffect(() => {
-    setScreen(screens.find(screen => screen.to === pathname) || {})
-  }, [pathname])
+    setScreen(screens.find(screen => screen.to === pathname && screen.state === screenState) || {})
+  }, [pathname, screenState])
 
   return {
     screens,
@@ -29,7 +25,7 @@ function useRoutesAndScreensFixture () {
         cur
       ]
     }), {}),
-    setCurrentScreen,
+    setScreen: setScreenState,
   }
 }
 

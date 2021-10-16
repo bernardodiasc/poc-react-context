@@ -7,7 +7,6 @@ import * as styles from './ScreenLink.module.css'
 const ScreenLink = ({ navigate, AppLink, screen, setScreen }) => {
   const handleOnClick = (e) => {
     e.preventDefault()
-    console.log(screen)
     setScreen(screen.state)
     navigate(screen.to)
   }

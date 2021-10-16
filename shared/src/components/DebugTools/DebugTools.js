@@ -14,7 +14,7 @@ const DebugTools = ({
   routes,
   isMobile,
   toggleMobile,
-  setCurrentScreen,
+  setScreen,
 }) => {
   return isDebugging ? (
     <aside className={styles.component}>
@@ -24,7 +24,7 @@ const DebugTools = ({
         AppLink={AppLink}
         navigate={navigate}
         routes={routes}
-        setScreen={setCurrentScreen}
+        setScreen={setScreen}
       />
     </aside>
   ) : null
