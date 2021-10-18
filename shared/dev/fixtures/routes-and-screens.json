@@ -1,0 +1,140 @@
+[
+  {
+    "to": "/",
+    "desktop": "Login-1.png",
+    "mobile": "Login-1.png",
+    "state": "(guest)"
+  },
+  {
+    "to": "/",
+    "desktop": "HomePage-Pre-ExclusivesLaunch.png",
+    "mobile": "HomePage-Pre-ExclusivesLaunch.png",
+    "state": "(authenticated)"
+  },
+  {
+    "to": "/",
+    "desktop": "HomePage-Pre-ExclusivesLaunch(1).png",
+    "mobile": "HomePage-Pre-ExclusivesLaunch(1).png",
+    "state": "(applied for a job)"
+  },
+  {
+    "to": "/404",
+    "desktop": "",
+    "mobile": "",
+    "state": ""
+  },
+  {
+    "to": "/signup",
+    "desktop": "Signup-1.png",
+    "mobile": "Signup-1-(1).png",
+    "state": ""
+  },
+  {
+    "to": "/profile",
+    "desktop": "Profile-3.png",
+    "mobile": "Profile-3.png",
+    "state": "(my profile)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-2.png",
+    "mobile": "ProfileEditor-2.png",
+    "state": "(overview)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-3.png",
+    "mobile": "ProfileEditor-3.png",
+    "state": "(header)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-4.png",
+    "mobile": "ProfileEditor-4.png",
+    "state": "(top skills)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-5.png",
+    "mobile": "ProfileEditor-5.png",
+    "state": "(introduction)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-6.png",
+    "mobile": "ProfileEditor-6.png",
+    "state": "(experiences)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-7.png",
+    "mobile": "ProfileEditor-7.png",
+    "state": "(xp title)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-8.png",
+    "mobile": "ProfileEditor-8.png",
+    "state": "(xp date)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-9.png",
+    "mobile": "ProfileEditor-9.png",
+    "state": "(xp skills)"
+  },
+  {
+    "to": "/profile",
+    "desktop": "ProfileEditor-10.png",
+    "mobile": "ProfileEditor-10.png",
+    "state": "(xp highlights)"
+  },
+  {
+    "to": "/settings",
+    "desktop": "Settings-1.png",
+    "mobile": "Settings-1.png",
+    "state": "(saved)"
+  },
+  {
+    "to": "/settings",
+    "desktop": "Settings-2.png",
+    "mobile": "Settings-2.png",
+    "state": "(email)"
+  },
+  {
+    "to": "/settings",
+    "desktop": "Settings-3.png",
+    "mobile": "Settings-3.png",
+    "state": "(password)"
+  },
+  {
+    "to": "/settings",
+    "desktop": "Settings-4.png",
+    "mobile": "Settings-4.png",
+    "state": "(notifications)"
+  },
+  {
+    "to": "/settings",
+    "desktop": "Settings-5.png",
+    "mobile": "Settings-5.png",
+    "state": "(rate)"
+  },
+  {
+    "to": "/settings",
+    "desktop": "Settings-6.png",
+    "mobile": "Settings-6.png",
+    "state": "(roles)"
+  },
+  {
+    "to": "/exclusives",
+    "desktop": "Exclusives-23.png",
+    "mobile": "Exclusives-23.png",
+    "state": ""
+  },
+  {
+    "to": "/applications",
+    "desktop": "Applications-InReview.png",
+    "mobile": "Applications-InReview.png",
+    "state": ""
+  }
+]

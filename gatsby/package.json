@@ -1,0 +1,24 @@
+{
+  "name": "poc-react-context-gatsby",
+  "version": "0.1.0",
+  "private": true,
+  "description": "POC React Context using Gatsby",
+  "author": "Bernardo Dias",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "dev": "../node_modules/gatsby/cli.js develop",
+    "start": "../node_modules/gatsby/cli.js develop",
+    "build": "../node_modules/gatsby/cli.js build",
+    "serve": "../node_modules/gatsby/cli.js serve",
+    "clean": "../node_modules/gatsby/cli.js clean",
+    "deploy": "../node_modules/gatsby/cli.js build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-image": "next",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

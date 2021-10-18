@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+
+import AppLayout from '@components/AppLayout'
+
+<Meta title="Layout/AppLayout" component={AppLayout} />
+
+<Canvas>
+  <Story name="default">
+    <AppLayout>
+      This is just a placeholder content.
+    </AppLayout>
+  </Story>
+  <Story name="is loading">
+    <AppLayout isLoading={true} />
+  </Story>
+  <Story name="is debugging">
+    <AppLayout isDebugging={true} />
+  </Story>
+  <Story name="no props">
+    <AppLayout />
+  </Story>
+</Canvas>

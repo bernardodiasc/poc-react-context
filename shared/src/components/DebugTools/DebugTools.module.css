@@ -1,0 +1,7 @@
+/* TO DO: make Panels to float dinamically without this positioning */
+.component {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 100vh;
+}
