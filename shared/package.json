@@ -6,9 +6,9 @@
   "author": "Bernardo Dias",
   "scripts": {
     "gen": "node dev/generator/generator.js",
-    "dev": "../node_modules/@storybook/react/bin/index.js -p 6006 -s static",
-    "docs": "../node_modules/@storybook/react/bin/index.js -p 6006 -s static --docs --no-manager-cache",
-    "build": "../node_modules/@storybook/react/bin/build.js -s static"
+    "dev": "../node_modules/@storybook/react/bin/index.js -p 6006",
+    "docs": "../node_modules/@storybook/react/bin/index.js -p 6006 --docs --no-manager-cache",
+    "build": "../node_modules/@storybook/react/bin/build.js"
   },
   "dependencies": {
     "react": "^17.0.2",

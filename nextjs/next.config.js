@@ -15,5 +15,9 @@ module.exports = withTM({
       '@utils': path.resolve(__dirname, '../shared/src/utils'),
     }
     return config
+  },
+  images: {
+    loader: "imgix",
+    path: "https://noop/",
   }
 })
