@@ -166,6 +166,10 @@ Example of the "App" combination:
 
 For the hook the https://github.com/bernardodiasc/poc-react-context/blob/main/shared/src/hooks/useFeatureFlags/useFeatureFlags.js is a good example.
 
+#### Resources
+
+- https://basarat.gitbook.io/typescript/main-1/barrel
+
 ### Develoment tools
 
 Developer tools are helpful and the main goal to have it is to boost productivity and add confidence.
@@ -205,6 +209,12 @@ The generator automatically creates a README file, so that a developer can read 
 The generator also adds the .stories.mdx file, that's used for Storybook. It could be another UI platform but Storybook offers very simple way to do things, despite the possibility to make things in a very complicated way too. The best benefit is the isolation of components using iframes. This helps the developer to create UI components that will look and behave exactly the same everywhere. Given that this tool should be used for UI components only, the QA team can test the component isolated from the app.
 
 - https://github.com/bernardodiasc/poc-react-context/blob/main/shared/src/components/AppLayout/AppLayout.stories.mdx
+
+##### Resources
+
+Another options shared by the team:
+
+- https://zeroheight.com/
 
 #### Figma
 
