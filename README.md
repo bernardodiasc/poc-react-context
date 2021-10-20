@@ -131,6 +131,7 @@ This is the basic shape of the app:
 
 ```
 ├── components
+| └── ComponentName
 │   ├── ComponentName.js
 │   ├── ComponentName.module.css
 │   ├── ComponentName.stories.mdx
@@ -138,17 +139,20 @@ This is the basic shape of the app:
 │   ├── README.md
 │   └── index.js
 ├── containers
+| └── ComponentName
 │   ├── ComponentNameContainer.js
 │   ├── README.md
 │   └── index.js
 ├── contexts
+| └── ComponentName
 │   ├── ComponentNameContext.js
 │   ├── ComponentNameProvider.js
 │   ├── README.md
 │   ├── index.js
 │   └── useComponentNameContext.js
 └── hooks
-    ├── ComponentName.js
+  └── useComponentName
+    ├── useComponentName.js
     ├── README.md
     └── index.js
 ```
