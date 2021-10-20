@@ -6,7 +6,7 @@
 ## How to use
 
 ```
-import <%= componentName %> from '@<%= componentType %>/<%= componentPath %>'
+import <%= componentName %>Container from '@<%= componentType %>/<%= componentPath %>'
 ```
 
 ```

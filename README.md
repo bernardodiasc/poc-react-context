@@ -91,7 +91,7 @@ Above pages are the app's "entry point". Whenever a user loads a page, it run th
 
 That's how browser's routes are constructed. In the Gatsby and NextJS the preferable way is to create files on a file system pattern that combines with routes. For routes that fetches dynamic data, server-side renders must have extra treatment to provide data. 
 
-When pages are dynamicaly generated they are called "client-side" pages. If the user loads a page from a route that's uses dynamic data, the entry point can be in fact the page in the parent route. That's the easy way to do, but not the best because it lost SEO abilities. It's possible to handle better these cases and dictate what's expected to be rendered on server-side.
+When pages are dynamicaly generated they are called "client-side" pages. If the user loads a page from a route that's uses dynamic data, the entry point can be in fact the page in the parent route. That's the easy way to do, but not the best because it lost SEO abilities. It's possible to handle better these cases and dictate what's expected to be rendered on server-side as described in the next section.
 
 - https://github.com/bernardodiasc/poc-react-context/tree/main/gatsby/src/pages
 - https://github.com/bernardodiasc/poc-react-context/tree/main/nextjs/pages
@@ -161,6 +161,15 @@ This is the basic shape of the app:
 - Containers composes screens using components. Dynamic data and business logic goes here. A container can import anything.
 - Context is how React will allow data to be stored and shared. Context are expected to be user with the provider and the hook, so most likely a container will import a context rather than the oposite. Also it's not expected for a context to import any component.
 - Hooks offers easy ways to consume functionalities, if its based on React, it can be used. 
+
+Imports would be like:
+
+```
+import ComponentName from '@components/ComponentName'
+import ComponentNameContainer from '@containers/ComponentName'
+import useComponentNameContext, { ComponentNameProvider } from '@contexts/ComponentName'
+import useComponentName from '@hooks/useComponentName'
+```
 
 Example of the "App" combination:
 

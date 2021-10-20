@@ -6,7 +6,7 @@
 ## How to use
 
 ```
-import App from '@contexts/App'
+import App from '@containers/App'
 ```
 
 ```
