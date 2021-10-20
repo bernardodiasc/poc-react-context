@@ -7,7 +7,7 @@ import ScreenConfig from './ScreenConfig'
 import * as styles from './DebugTools.module.css'
 
 const DebugTools = ({
-  isDebugging,
+  isDebugging = true,
   navigate,
   AppLink,
   screen,

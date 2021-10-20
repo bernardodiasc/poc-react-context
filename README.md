@@ -1,6 +1,12 @@
 # Proof of Concepts
 
-The goal of this project is to explore some technologies.
+The goal of this project is to explore some technologies, check the summary at "Implemented concepts" section.
+
+## What's this?
+
+It's a JS application split into 3 parts. Being one part the shared files, which is pretty much everything that can be decoupled from the other parts.
+The other parts are site builder setups, they should reproduce the same outcomes using the shared files. This way it's possible to see capacities and limitations isolated from what's purely React and other front-end code.
+
 
 ## How to setup?
 
@@ -14,23 +20,30 @@ The goal of this project is to explore some technologies.
 2. Run `yarn dev`
 3. Open http://localhost:8000/
 
+![Gatsby](https://raw.githubusercontent.com/bernardodiasc/poc-react-context/main/gatsby.gif)
+
 ### NextJS
 
 1. Go to `nextjs` directory
 2. Run `yarn dev`
 3. Open http://localhost:3000/
  
+![NextJS](https://raw.githubusercontent.com/bernardodiasc/poc-react-context/main/nextjs.gif)
 ### Shared
 
 1. Go to `shared` directory
 2. Run `yarn dev`
 3. Open http://localhost:6006/
 
+<!-- ![Storybook](https://raw.githubusercontent.com/bernardodiasc/poc-react-context/main/storybook.gif) -->
+
 #### Generator
 
 1. In the `shared` directory
 2. Run `yarn gen`
 3. Chose the component type and name
+
+<!-- ![Boilerplate Generator](https://raw.githubusercontent.com/bernardodiasc/poc-react-context/main/generator.gif) -->
 
 ## Implemented concepts
 

@@ -1,6 +1,7 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
 
 import AppLayout from '@components/AppLayout'
+import DebugTools from '@components/DebugTools'
 
 <Meta title="Layout/AppLayout" component={AppLayout} />
 
@@ -14,7 +15,7 @@ import AppLayout from '@components/AppLayout'
     <AppLayout isLoading={true} />
   </Story>
   <Story name="is debugging">
-    <AppLayout isDebugging={true} />
+    <AppLayout DebugTools={DebugTools} />
   </Story>
   <Story name="no props">
     <AppLayout />

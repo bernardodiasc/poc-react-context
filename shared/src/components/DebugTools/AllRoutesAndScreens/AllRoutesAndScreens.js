@@ -6,7 +6,7 @@ import ScreenLinksList from '../ScreenLinksList'
 
 import * as styles from './AllRoutesAndScreens.module.css'
 
-const AllRoutesAndScreens = ({ navigate, AppLink, routes, screen, setScreen }) => {
+const AllRoutesAndScreens = ({ navigate, AppLink, routes = {}, screen, setScreen }) => {
   return (
     <Panel title="All Routes and Screens">
       {Object.keys(routes).map(key => (

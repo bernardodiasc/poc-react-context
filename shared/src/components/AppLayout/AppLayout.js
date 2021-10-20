@@ -13,7 +13,9 @@ const AppLayout = ({ isLoading, children, DebugTools }) => {
     </main>
   ) : (
     <main>
-      <DebugTools />
+      {DebugTools && (
+        <DebugTools />
+      )}
       {children}
     </main>
   )
